@@ -1,0 +1,12 @@
+{
+  "name": "financial-bp-command-center",
+  "description": "财务BP指挥中心，覆盖4讲22模块业财融合知识体系与8个可执行工具模型 (量本利分析/客户盈利/供应商评估/预算监控/投资可行性/能力评估/业财融合健康度/AI场景适配)。 支持建安行业专属参数，每个工具含完整计算逻辑、输入格式、JSON输出。\n",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/financial-bp-command-center"
+  ]
+}

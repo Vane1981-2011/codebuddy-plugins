@@ -1,0 +1,12 @@
+{
+  "name": "tax-risk-early-warning-engine",
+  "description": "建安企业税务风险预警引擎，覆盖发票/特殊业务/收入/成本费用4大类15个预警指标， 含数学公式、三区阈值、建安专属调整系数、JSON输出，适配金税四期稽查逻辑。\n",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/tax-risk-early-warning-engine"
+  ]
+}

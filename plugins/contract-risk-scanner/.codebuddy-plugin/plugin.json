@@ -1,0 +1,12 @@
+{
+  "name": "contract-risk-scanner",
+  "description": "合同风险扫描AI助手。在合同签署前的最后审核环节，自动扫描合同中的\"陷阱条款\"并标注风险等级。覆盖6大类高风险条款（无限责任/单方解约/验收模糊/付款不利/IP不清/管辖不利），支持立场加权（甲方/乙方/出租方/承租方等6种角色），输出结构化Excel报告+Markdown谈判备忘。触发词：合同扫描、合同风险、合同审查、审核合同、审合同、contract scan、contract risk、条款",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/contract-risk-scanner"
+  ]
+}

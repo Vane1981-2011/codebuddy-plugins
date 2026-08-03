@@ -1,0 +1,12 @@
+{
+  "name": "skill-intelligence",
+  "description": "综合性技能智能管理中枢——覆盖技能发现（六市场联合搜索）、技能匹配（双模式评分推荐）、 技能健康（冗余/冲突/质量门禁）、技能生命周期（安装→匹配→升级→归档）全流程。 Comprehensive skill intelligence hub: discovery, matching, health monitoring, lifecycle management.\n",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/skill-intelligence"
+  ]
+}

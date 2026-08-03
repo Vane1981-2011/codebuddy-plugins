@@ -1,0 +1,12 @@
+{
+  "name": "tau-diagnosis",
+  "description": "Use this skill when the user asks to diagnose, audit, or upgrade an AI agent platform thinking methodology system using Tao's Law (韬定律) τ-minimization framework. Triggers include: '诊断思维体系', 'τ全链路诊断', ",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/tau-diagnosis"
+  ]
+}

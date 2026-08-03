@@ -1,0 +1,12 @@
+{
+  "name": "multimodal-bridge",
+  "description": "DeepSeek V4 Pro 多模态桥接层——弥补纯文本LLM在图像/视频处理上的能力缺口。提供五条桥接路径：OCR桥(图片→文本)、生图桥(文本→图片)、搜索桥(图片元数据搜索)、3D/特效桥(文本→3D模型/视频特效)、🆕视频桥(视频→文本)。触发词：识别图片、OCR、提取图片文字、生成图片、生成插图、文生图、搜索参考图、生成3D模型、视频特效、图片分析、分析视频、mp4、视频理解、提取视频",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/multimodal-bridge"
+  ]
+}

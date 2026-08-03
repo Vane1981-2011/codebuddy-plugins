@@ -1,0 +1,12 @@
+{
+  "name": "expert-sync",
+  "description": "WorkBuddy 专家市场自动同步——检测新增/更新的内置专家与技能，自动匹配用户领域并安装。触发词：专家同步、检查专家更新、sync experts、更新技能库、市场新技能。",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/expert-sync"
+  ]
+}

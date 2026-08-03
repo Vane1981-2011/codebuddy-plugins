@@ -1,0 +1,12 @@
+{
+  "name": "spa-engineering-guard",
+  "description": "Engineering guardrails for developing single-file HTML applications with WorkBuddy. Covers regex pitfalls, CSS selector traps, localStorage isolation, Q bank validation, lock/cancel/exit navigation pr",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/spa-engineering-guard"
+  ]
+}

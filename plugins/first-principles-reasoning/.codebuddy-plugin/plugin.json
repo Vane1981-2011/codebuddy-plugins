@@ -1,0 +1,12 @@
+{
+  "name": "first-principles-reasoning",
+  "description": "智能体平台思维驱动的问题解决框架。强制四阶段闭环（准备→执行→质检→复盘）+ 三层推理体系（L1第一性原理/L2深度推理/L3创新超越）+ 五大工程实践（编排/工具/路由/沉淀/复用）。This skill should be used whenever the task requires structured reasoning, complex problem-solving, multi-s",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/first-principles-reasoning"
+  ]
+}

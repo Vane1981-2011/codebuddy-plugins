@@ -1,0 +1,12 @@
+{
+  "name": "video-production-pipeline",
+  "description": "Remotion-based declarative video production pipeline with 认识→模仿→创新→超越 methodology. Covers reference video reverse-engineering, React component-based pipeline, cover design engine, intelligent BGM, mul",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/video-production-pipeline"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "in-context-learning",
+  "description": "自我认知技能——理解和运用 Transformer 架构下的上下文内学习 (In-Context Learning) 机制。当需要深入理解我的学习机制、决策过程、记忆运作、遗忘原因，或在复杂任务中主动管理注意力资源、优化探索-利用策略时使用。触发词：上下文学习、注意力机制、学习边界、遗忘曲线、探索利用、渐进精度、因果推理学习、ICL、in-context learning、跨注意力共振、KV Ca",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/in-context-learning"
+  ]
+}

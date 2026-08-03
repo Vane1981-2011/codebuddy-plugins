@@ -1,0 +1,12 @@
+{
+  "name": "pixabay-bgm-search",
+  "description": "智能背景音乐搜索与下载技能。从视频文案（标题/描述/字幕）中自动提取音乐关键词（情绪、风格、节奏），\n翻译为英文后搜索 Pixabay Music / Freesound，展示匹配的背景音乐列表（标题、时长、风格标签、\n预览/下载链接）。支持自定义搜索参数（时长范围、风格过滤、来源选择）以及一键下载指定音乐。\n当用户需要搜索背景音乐、为视频配BGM、搜索免费可商用音乐、或在 Pixabay/Fre",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/pixabay-bgm-search"
+  ]
+}

@@ -13,11 +13,340 @@
       "source": "./plugins/creative-origin-engine",
       "version": "2.0.1",
       "category": "content-creation",
-      "tags_zh": ["AI Agent", "内容创作"],
-      "author": { "name": "vane" },
+      "tags_zh": [
+        "AI Agent",
+        "内容创作"
+      ],
+      "author": {
+        "name": "vane"
+      },
       "homepage": "https://github.com/Vane1981-2011/creative-origin-engine",
       "license": "MIT",
-      "skills": ["./plugins/creative-origin-engine/skills/creative-origin-engine"]
+      "skills": [
+        "./plugins/creative-origin-engine/skills/creative-origin-engine"
+      ]
+    },
+    {
+      "name": "jiying",
+      "description": "多Agent信任基础设施——宪法即代码。6Agent编排+康德/马尔库塞/海德格尔三宪法自动阻断/警告。TEP v1.0 · 7项门禁 · 10种偏见交叉验证。",
+      "description_en": "Multi-Agent Trust Infrastructure: 6-agent orchestration with Constitution-as-Code. Philosophical rules auto-block/warn. TEP v1.0, 7 quality gates, 10 bias cross-validation.",
+      "source": "./plugins/jiying",
+      "version": "0.4.1",
+      "category": "developer-tools",
+      "tags_zh": [
+        "AI Agent",
+        "多Agent",
+        "信任",
+        "宪法",
+        "编排"
+      ],
+      "author": {
+        "name": "Vane1981"
+      },
+      "homepage": "https://github.com/Vane1981-2011/jiying",
+      "license": "Apache-2.0",
+      "skills": [
+        "./plugins/jiying/skills/jiying"
+      ]
+    },
+    {
+      "name": "cangjie-skill",
+      "description": "Distill a book, long-video transcript, podcast, course, or interview into a coherent set of executab",
+      "source": "./plugins/cangjie-skill",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/cangjie-skill/skills/cangjie-skill"
+      ]
+    },
+    {
+      "name": "context-cleanup",
+      "description": "上下文自动清理协议。每次对话任务完成后，自动识别可释放的上下文段落、移除冗余中间结果和缓存数据、压缩记忆写入，最大限度降低 token 消耗和积分浪费。 触发条件：任何实质性任务完成后（非闲聊/简单问",
+      "source": "./plugins/context-cleanup",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/context-cleanup/skills/context-cleanup"
+      ]
+    },
+    {
+      "name": "context-manager",
+      "description": "跨对话上下文管理器。在每次新对话启动时读取 `~/Desktop/WorkBuddy上下文/上下文文档.md` 加载已有上下文；在每次对话结束前将该对话的关键进展、决策和待办事项更新回文档。触发词：加",
+      "source": "./plugins/context-manager",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/context-manager/skills/context-manager"
+      ]
+    },
+    {
+      "name": "contract-risk-scanner",
+      "description": "合同风险扫描AI助手。在合同签署前的最后审核环节，自动扫描合同中的\"陷阱条款\"并标注风险等级。覆盖6大类高风险条款（无限责任/单方解约/验收模糊/付款不利/IP不清/管辖不利），支持立场加权（甲方/乙",
+      "source": "./plugins/contract-risk-scanner",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/contract-risk-scanner/skills/contract-risk-scanner"
+      ]
+    },
+    {
+      "name": "doc-coauthoring",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to wri",
+      "source": "./plugins/doc-coauthoring",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/doc-coauthoring/skills/doc-coauthoring"
+      ]
+    },
+    {
+      "name": "expert-sync",
+      "description": "WorkBuddy 专家市场自动同步——检测新增/更新的内置专家与技能，自动匹配用户领域并安装。触发词：专家同步、检查专家更新、sync experts、更新技能库、市场新技能。",
+      "source": "./plugins/expert-sync",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/expert-sync/skills/expert-sync"
+      ]
+    },
+    {
+      "name": "financial-bp-command-center",
+      "description": "财务BP指挥中心，覆盖4讲22模块业财融合知识体系与8个可执行工具模型 (量本利分析/客户盈利/供应商评估/预算监控/投资可行性/能力评估/业财融合健康度/AI场景适配)。 支持建安行业专属参数，每个",
+      "source": "./plugins/financial-bp-command-center",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/financial-bp-command-center/skills/financial-bp-command-center"
+      ]
+    },
+    {
+      "name": "first-principles-reasoning",
+      "description": "智能体平台思维驱动的问题解决框架。强制四阶段闭环（准备→执行→质检→复盘）+ 三层推理体系（L1第一性原理/L2深度推理/L3创新超越）+ 五大工程实践（编排/工具/路由/沉淀/复用）。This sk",
+      "source": "./plugins/first-principles-reasoning",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/first-principles-reasoning/skills/first-principles-reasoning"
+      ]
+    },
+    {
+      "name": "frontend-dev",
+      "description": "Full-stack frontend development combining premium UI design, cinematic animations, AI-generated medi",
+      "source": "./plugins/frontend-dev",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/frontend-dev/skills/frontend-dev"
+      ]
+    },
+    {
+      "name": "in-context-learning",
+      "description": "自我认知技能——理解和运用 Transformer 架构下的上下文内学习 (In-Context Learning) 机制。当需要深入理解我的学习机制、决策过程、记忆运作、遗忘原因，或在复杂任务中主动",
+      "source": "./plugins/in-context-learning",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/in-context-learning/skills/in-context-learning"
+      ]
+    },
+    {
+      "name": "markitdown",
+      "description": "Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), a",
+      "source": "./plugins/markitdown",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/markitdown/skills/markitdown"
+      ]
+    },
+    {
+      "name": "multimodal-bridge",
+      "description": "DeepSeek V4 Pro 多模态桥接层——弥补纯文本LLM在图像/视频处理上的能力缺口。提供五条桥接路径：OCR桥(图片→文本)、生图桥(文本→图片)、搜索桥(图片元数据搜索)、3D/特效桥(文",
+      "source": "./plugins/multimodal-bridge",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/multimodal-bridge/skills/multimodal-bridge"
+      ]
+    },
+    {
+      "name": "pdfkit-py",
+      "description": "Pure-Python PDF toolkit with 50 commands covering reading, editing, conversion, forms, encryption, O",
+      "source": "./plugins/pdfkit-py",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/pdfkit-py/skills/pdfkit-py"
+      ]
+    },
+    {
+      "name": "picture-book-pipeline",
+      "description": "全流程 AI 绘本生产线。覆盖7种作品类型（对话解经/漫画冒险/单图叙事/诗歌独白/段落叙事/自然悟道/儿童绘本）、 4种角色系统、5种版面模式。Full-stack AI picture book ",
+      "source": "./plugins/picture-book-pipeline",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/picture-book-pipeline/skills/picture-book-pipeline"
+      ]
+    },
+    {
+      "name": "pixabay-bgm-search",
+      "description": "智能背景音乐搜索与下载技能。从视频文案（标题/描述/字幕）中自动提取音乐关键词（情绪、风格、节奏），\n翻译为英文后搜索 Pixabay Music / Freesound，展示匹配的背景音乐列表（标题",
+      "source": "./plugins/pixabay-bgm-search",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/pixabay-bgm-search/skills/pixabay-bgm-search"
+      ]
+    },
+    {
+      "name": "skill-intelligence",
+      "description": "综合性技能智能管理中枢——覆盖技能发现（六市场联合搜索）、技能匹配（双模式评分推荐）、 技能健康（冗余/冲突/质量门禁）、技能生命周期（安装→匹配→升级→归档）全流程。 Comprehensive s",
+      "source": "./plugins/skill-intelligence",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/skill-intelligence/skills/skill-intelligence"
+      ]
+    },
+    {
+      "name": "snap-up-assassin",
+      "description": "浏览器自动化抢购系统 v4.1 — Zcode优化版。双通道并行 + 时钟校准+RTT测量 + 拟人化MouseEvent点击 + 阶段自适应循环(5ms→30ms) + 五层守护。覆盖自动抢购全流程",
+      "source": "./plugins/snap-up-assassin",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/snap-up-assassin/skills/snap-up-assassin"
+      ]
+    },
+    {
+      "name": "spa-engineering-guard",
+      "description": "Engineering guardrails for developing single-file HTML applications with WorkBuddy. Covers regex pit",
+      "source": "./plugins/spa-engineering-guard",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/spa-engineering-guard/skills/spa-engineering-guard"
+      ]
+    },
+    {
+      "name": "tau-diagnosis",
+      "description": "Use this skill when the user asks to diagnose, audit, or upgrade an AI agent platform thinking metho",
+      "source": "./plugins/tau-diagnosis",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/tau-diagnosis/skills/tau-diagnosis"
+      ]
+    },
+    {
+      "name": "tau-diagnosis-zcode",
+      "description": "增强版 τ 全链路诊断与升级引擎（zcode强化版）。继承 tau-diagnosis v2.0 四层时延诊断框架 + ZCode mad-think-pipeline S1-S4 并行推理管线，融合",
+      "source": "./plugins/tau-diagnosis-zcode",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/tau-diagnosis-zcode/skills/tau-diagnosis-zcode"
+      ]
+    },
+    {
+      "name": "tax-risk-early-warning-engine",
+      "description": "建安企业税务风险预警引擎，覆盖发票/特殊业务/收入/成本费用4大类15个预警指标， 含数学公式、三区阈值、建安专属调整系数、JSON输出，适配金税四期稽查逻辑。\n",
+      "source": "./plugins/tax-risk-early-warning-engine",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/tax-risk-early-warning-engine/skills/tax-risk-early-warning-engine"
+      ]
+    },
+    {
+      "name": "video-production-pipeline",
+      "description": "Remotion-based declarative video production pipeline with 认识→模仿→创新→超越 methodology. Covers reference ",
+      "source": "./plugins/video-production-pipeline",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/video-production-pipeline/skills/video-production-pipeline"
+      ]
+    },
+    {
+      "name": "weread-skills",
+      "description": "微信读书助手 — 搜索书籍、管理书架、查看笔记划线、浏览书评、阅读统计、发现推荐好书、 生成高质量Obsidian知识笔记、Cookie刷新管理。WeRead assistant — search, ",
+      "source": "./plugins/weread-skills",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/weread-skills/skills/weread-skills"
+      ]
     }
   ]
 }

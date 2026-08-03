@@ -1,0 +1,12 @@
+{
+  "name": "picture-book-pipeline",
+  "description": "全流程 AI 绘本生产线。覆盖7种作品类型（对话解经/漫画冒险/单图叙事/诗歌独白/段落叙事/自然悟道/儿童绘本）、 4种角色系统、5种版面模式。Full-stack AI picture book production line.\n",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/picture-book-pipeline"
+  ]
+}

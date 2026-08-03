@@ -1,0 +1,12 @@
+{
+  "name": "snap-up-assassin",
+  "description": "浏览器自动化抢购系统 v4.1 — Zcode优化版。双通道并行 + 时钟校准+RTT测量 + 拟人化MouseEvent点击 + 阶段自适应循环(5ms→30ms) + 五层守护。覆盖自动抢购全流程。\n",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/snap-up-assassin"
+  ]
+}
