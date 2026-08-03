@@ -1,0 +1,16 @@
+{
+  "name": "jiying",
+  "description": "Multi-Agent Trust Infrastructure with Constitution-as-Code. 6-Agent orchestration (Planner→Researcher→Creator→Reviewer) with 3 philosophical rules (Kant/Marcuse/Heidegger) compiled into executable code. 178 tests, A+ 96.45 review, Apache 2.0.",
+  "description_zh": "多Agent信任基础设施——宪法即代码。6Agent编排+康德/马尔库塞/海德格尔三条哲学规则自动阻断/警告。TEP v1.0可信执行协议、7项质量门禁、10种认知偏见交叉验证。178测试通过，A+96.45分。",
+  "description_en": "Multi-Agent Trust Infrastructure: 6-agent orchestration with Constitution-as-Code. Philosophical rules (Kant/Marcuse/Heidegger) automatically block or warn AI outputs. TEP v1.0 protocol, 7 quality gates, 10 bias cross-validation.",
+  "version": "0.4.1",
+  "author": {
+    "name": "Vane1981"
+  },
+  "homepage": "https://github.com/Vane1981-2011/jiying",
+  "repository": "https://github.com/Vane1981-2011/jiying",
+  "license": "Apache-2.0",
+  "category": "developer-tools",
+  "keywords": ["AI Agent", "multi-agent", "trust", "constitution", "orchestration", "稽影", "多Agent", "信任", "宪法", "编排", "开源"],
+  "skills": ["./skills/jiying"]
+}
