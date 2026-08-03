@@ -347,6 +347,19 @@
       "skills": [
         "./plugins/weread-skills/skills/weread-skills"
       ]
+    },
+    {
+      "name": "mad-think-pipeline",
+      "description": ">",
+      "source": "./plugins/mad-think-pipeline",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/mad-think-pipeline/skills/mad-think-pipeline"
+      ]
     }
   ]
 }

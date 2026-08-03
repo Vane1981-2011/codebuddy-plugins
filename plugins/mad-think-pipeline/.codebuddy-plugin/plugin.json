@@ -1,0 +1,12 @@
+{
+  "name": "mad-think-pipeline",
+  "description": ">",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "productivity",
+  "skills": [
+    "./skills/mad-think-pipeline"
+  ]
+}
