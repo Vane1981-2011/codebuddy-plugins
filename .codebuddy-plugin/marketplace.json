@@ -1,0 +1,23 @@
+{
+  "name": "vane-codebuddy-plugins",
+  "description": "vane 的个人 CodeBuddy 插件市场",
+  "owner": {
+    "name": "vane",
+    "url": "https://github.com/Vane1981-2011"
+  },
+  "plugins": [
+    {
+      "name": "creative-origin-engine",
+      "description": "多Agent并行辩论式创意决策引擎",
+      "description_en": "Multi-agent creative decision engine",
+      "source": "./plugins/creative-origin-engine",
+      "version": "2.0.1",
+      "category": "content-creation",
+      "tags_zh": ["AI Agent", "内容创作"],
+      "author": { "name": "vane" },
+      "homepage": "https://github.com/Vane1981-2011/creative-origin-engine",
+      "license": "MIT",
+      "skills": ["./plugins/creative-origin-engine/skills/creative-origin-engine"]
+    }
+  ]
+}

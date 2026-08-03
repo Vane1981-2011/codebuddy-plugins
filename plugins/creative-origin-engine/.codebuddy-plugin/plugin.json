@@ -1,0 +1,16 @@
+{
+  "name": "creative-origin-engine",
+  "description": "Multi-agent debate-driven creative decision engine. Three independent AI agents (Builder/Deconstructor/Data-Anchor) analyze in parallel, then Critic+Defender cross-validate, producing an executable plan scored on a 20-point scale. Use when user asks for 策划/方案/创意/活动策划/IP孵化/创业验证.",
+  "description_zh": "多Agent并行辩论式创意决策引擎。输入模糊创意→三Agent(建构/解构/数据锚定)并行分析→Critic+Defender双验证→20分制量化评分→可执行策划案+Agent Skill双格式输出。适用于文创策划、IP孵化、创业验证、商业模式设计。",
+  "description_en": "Multi-agent debate-driven creative decision engine with 20-point quantitative scoring and Skill export.",
+  "version": "2.0.1",
+  "author": {
+    "name": "vane"
+  },
+  "homepage": "https://github.com/Vane1981-2011/creative-origin-engine",
+  "repository": "https://github.com/Vane1981-2011/creative-origin-engine",
+  "license": "MIT",
+  "category": "content-creation",
+  "keywords": ["creative", "planning", "multi-agent", "debate", "decision", "策划", "创意", "多Agent", "AI"],
+  "skills": ["./skills/creative-origin-engine"]
+}
