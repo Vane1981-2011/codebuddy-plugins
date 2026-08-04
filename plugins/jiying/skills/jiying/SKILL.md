@@ -1,10 +1,32 @@
 ---
-name: jiying
-description: >
-  多Agent信任基础设施——宪法即代码。6Agent编排(Planner→Researcher→Creator→Reviewer) + 康德/马尔库塞/海德格尔三条哲学规则自动阻断/警告AI输出。
-  TEP v1.0可信执行协议 · 7项质量门禁 · 10种认知偏见交叉验证 · 不确定性预算 · 断点恢复。
-  触发条件：用户需要多Agent协作、AI信任验证、宪法检查、质量门禁。
-  关键词：稽影、jiying、多Agent、信任、宪法、编排、AI Agent、trust、constitution。
+name: 稽影 · 多Agent信任基础设施
+version: 1.0.7
+description: 多Agent信任基础设施——宪法即代码。6Agent编排(Planner→Researcher→Creator→Reviewer+Executor+ShellPolicy)+康德/马尔库塞/海德格尔三宪法自动阻断/警告。TEP v1.0可信执行协议(Ed25519真签名)·7项质量门禁·10种认知偏见交叉验证·不确定性预算·断点恢复。React 19+Vite 8+Electron+Express。Apache 2.0开源。
+category: developer-tools
+platforms: [WorkBuddy, CodeBuddy]
+triggers:
+  - 稽影
+  - jiying
+  - 多Agent编排
+  - 宪法检查
+  - 信任验证
+  - 质量门禁
+  - TEP协议
+  - 认知偏见
+keywords:
+  - 稽影
+  - jiying
+  - 多Agent
+  - 信任
+  - 宪法即代码
+  - AI Agent
+  - 编排
+  - 质量门禁
+license: Apache-2.0
+author: Vane1981
+homepage: https://github.com/Vane1981-2011/jiying
+demo_url: https://vane1981-2011.github.io/jiying/portfolio/
+disable: false
 ---
 
 # 稽影 (Jiying) · 多Agent信任基础设施
@@ -24,6 +46,13 @@ description: >
 ## 快速开始
 
 ```bash
+# 安装
+npx clawhub install jiying
+
+# 启动服务端
+cd jiying && node server/index.js
+
+# 或开发模式（含前端 UI）
 git clone https://github.com/Vane1981-2011/jiying.git
 cd jiying
 npm install
@@ -35,33 +64,88 @@ npm run dev
 ## 核心能力
 
 ### ⚖️ 宪法即代码
-- **尊严（康德）**: AI必须在前25%位置声明身份 → 未声明则阻断
-- **自主（马尔库塞）**: 每次输出≥2个真正不同的替代方案 → 不足则警告
-- **追问（海德格尔）**: 必须声明具体可质疑的前提假设 → 缺失则警告
+三条哲学规则直接编译为可执行函数：
+- **尊严（康德）**: AI 必须在前 25% 位置声明身份 → 未声明则 **阻断**
+- **自主（马尔库塞）**: 每次输出 ≥2 个真正不同的替代方案 → 不足则 **警告**
+- **追问（海德格尔）**: 必须声明具体可质疑的前提假设 → 缺失则 **警告**
 
 ### 🔗 TEP v1.0 可信执行协议
-Agent间信任验证开放标准。8组件信封，Ed25519非对称签名。
+Agent 间信任验证开放标准。8 组件信封（任务·授权·执行档案·策略决策·行动收据·证据包·质量证明·审计签名），Ed25519 非对称签名。
 
-### 🛡️ 7项预检门禁
-对标Hermes：宪法状态→Agent参与→覆盖率≥60%→占位符检测→评分≥3→假设完整→去重(Jaccard>85%)
+### 🛡️ 7 项预检门禁
+对标 Hermes：宪法状态→Agent 参与→覆盖率≥60%→占位符检测→评分≥3→假设完整→去重(Jaccard>85%)
 
-### 🧠 10种认知偏见交叉验证
-Critic+Defender双prompt架构，检测确认偏误、锚定效应等10种偏见。
+### 🧠 10 种认知偏见交叉验证
+Critic + Defender 双 prompt 架构。检测确认偏误、锚定效应、可得性启发、框架效应、过度自信、群体思维、沉没成本、近期偏差、归因错误、现状偏误。
 
-## 命令
+### 📊 不确定性预算
+6 源加权量化（数据/模型/知识/假设/推理/环境）+ 3 级阈值（LOW/MEDIUM/HIGH）+ 自动行动（验证/复审/拒绝）
+
+## 命令参考
 
 | 命令 | 说明 |
 |:-----|:-----|
-| `npm run dev` | 启动开发服务器 |
-| `npm test` | 运行178个测试 |
+| `npm run dev` | 启动开发服务器 (Vite + React) |
+| `npm run dev:electron` | 启动 Electron 桌面应用 |
+| `npm test` | 运行全部 179 个测试 |
 | `npm run build` | 生产构建 |
-| `node server/index.js` | 启动服务端(端口3456) |
+| `npm run lint` | 运行 oxlint 静态检查 |
+| `node server/index.js` | 启动服务端内核 (端口 3456) |
+
+## API 端点
+
+| 端点 | 方法 | 说明 |
+|:-----|:----:|:-----|
+| `/health` | GET | 健康检查 |
+| `/api/constitution/check` | POST | 宪法检查 `{ text: string }` |
+| `/api/quality/review` | POST | 质量门禁审查 |
+| `/api/audit/log` | GET/POST | 审计日志查询/写入 |
+
+## 架构
+
+```
+src/
+├── constitution/    # 规则引擎 + 三条宪法 + Shell 权限 + 语义验证器(L2)
+├── guardian/        # 5 项后台守护监控
+├── agents/          # 6 Agent + 注册表 + 技能系统
+├── orchestrator/    # 编排引擎（并行+断点恢复）
+├── quality/         # 7 项门禁 + 魔鬼代言人 + 伦理 + 演化
+├── tep/             # TEP 可信执行协议
+├── context/         # Token 预算 Context Builder
+├── knowledge/       # TF-IDF 向量 RAG
+├── audit/           # 代偿审计收集器
+├── store/           # Zustand 状态管理 (5 Store)
+├── pages/           # 6 个页面
+├── components/      # 布局 + Markdown + 错误边界
+└── utils/           # Fallback 链 + 重试 + 导出
+```
+
+## 技术栈
+
+`React 19` · `Vite 8` · `Zustand` · `Vercel AI SDK` · `DeepSeek` · `Electron` · `Express` · `@noble/ed25519` · `Vitest`
+
+## 故障排除
+
+| 问题 | 解决 |
+|:-----|:-----|
+| API Key 不生效 | 检查设置页面 → 确认 Key 格式 → 刷新页面 |
+| Agent 卡住不动 | 检查浏览器控制台 → 确认网络连接 → 重启 `npm run dev` |
+| 宪法不阻断 | 确认 `constitution/rules.js` 中的 RULES 已加载 → 检查 L1 正则是否匹配 |
+| 服务端启动失败 | 确认端口 3456 未被占用 → `lsof -i :3456` |
+| 测试失败 | `npm test` 查看具体失败项 → 确认 Node.js ≥ 18 |
+
+## 性能提示
+
+- L2 语义验证器有 5 分钟缓存，相同内容不重复调用 LLM
+- 开发环境可关闭 L2（`{ enabled: false }`）以节省 API 成本
+- 服务端审计日志上限 1000 条，超出自动滚动
 
 ## 链接
 
 - GitHub: https://github.com/Vane1981-2011/jiying
-- ClawHub: https://clawhub.ai/vane1981/skills/jiying
 - 作品展示: https://vane1981-2011.github.io/jiying/portfolio/
+- ClawHub: https://clawhub.ai/vane1981/skills/jiying
+- 复核报告: https://vane1981-2011.github.io/jiying/portfolio/稽影系列_参赛作品_复核报告.md
 
 ## 许可
 
