@@ -1,0 +1,12 @@
+{
+  "name": "investment-risk-engine",
+  "description": "风险分析相关技能",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "business",
+  "skills": [
+    "./skills/investment-risk-engine"
+  ]
+}

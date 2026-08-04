@@ -360,6 +360,32 @@
       "skills": [
         "./plugins/mad-think-pipeline/skills/mad-think-pipeline"
       ]
+    },
+    {
+      "name": "risk-assessment-matrix",
+      "description": "风险评估矩阵",
+      "source": "./plugins/risk-assessment-matrix",
+      "version": "1.0.0",
+      "category": "business",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/risk-assessment-matrix/skills/risk-assessment-matrix"
+      ]
+    },
+    {
+      "name": "investment-risk-engine",
+      "description": "风险分析",
+      "source": "./plugins/investment-risk-engine",
+      "version": "1.0.0",
+      "category": "business",
+      "author": {
+        "name": "vane"
+      },
+      "skills": [
+        "./plugins/investment-risk-engine/skills/investment-risk-engine"
+      ]
     }
   ]
 }

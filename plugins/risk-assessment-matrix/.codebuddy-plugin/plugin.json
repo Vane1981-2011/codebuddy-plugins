@@ -1,0 +1,12 @@
+{
+  "name": "risk-assessment-matrix",
+  "description": "风险评估矩阵——多维度风险识别与量化评级",
+  "version": "1.0.0",
+  "author": {
+    "name": "vane"
+  },
+  "category": "business",
+  "skills": [
+    "./skills/risk-assessment-matrix"
+  ]
+}

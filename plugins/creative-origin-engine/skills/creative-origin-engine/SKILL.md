@@ -296,16 +296,22 @@ description: >
 
 ## 8. 与现有技能的关系
 
-| 现有技能 | 在本引擎中的角色 |
-|:-----|:-----|
-| `first-principles-reasoning` | 为 Agent α 提供四因拆解方法论 |
-| `cognitive-decision-framework` | 为融合重构提供决策框架 |
-| `risk-assessment-matrix` | 为 Agent β 提供风险分级标准 |
-| `market-competitive-intelligence` | 为 Agent γ 提供竞品数据搜索 |
-| `industry-analysis-assistant` | 为 Agent γ 提供行业分析框架 |
-| `framework-orchestrator` | 为整体管道提供编排模式参考 |
-| `agent-research` | 为 Agent γ 提供网络调研能力 |
-| `cost-benefit-analysis` | 为执行蓝图提供成本效益分析 |
+| 现有技能 | 在本引擎中的角色 | 注册状态 |
+|:-----|:-----|:--:|
+| `first-principles-reasoning` | 为 Agent α 提供四因拆解方法论 | ✅ |
+| `cognitive-decision-framework` | 为融合重构提供决策框架 | ✅ |
+| `risk-assessment-matrix` | 为 Agent β 提供风险量化评级标准 | ✅ 🆕 |
+| `market-competitive-intelligence` | 为 Agent γ 提供竞品数据搜索 | ✅ |
+| `industry-analysis-assistant` | 为 Agent γ 提供行业分析框架 | ✅ |
+| `framework-orchestrator` | 为整体管道提供编排模式参考 | ✅ |
+| `agent-research` | 为 Agent γ 提供网络调研能力 | ✅ |
+| `cost-benefit-analysis` | 为执行蓝图提供成本效益分析 | ✅ |
+| `investment-risk-engine` | 为价值判断提供投资回报分析 | ✅ 🆕 |
+| `contract-risk-scanner` | 为执行蓝图提供合规性检查 | ✅ 🆕 |
+| `tax-risk-early-warning-engine` | 为商业模式提供税务风险评估 | ✅ 🆕 |
+| `financial-bp-command-center` | 为成本拆解提供业财融合模型 | ✅ 🆕 |
+
+**v2.1 升级**：依赖技能从 8 个扩展到 12 个，新增风险管理/合规/财务四维支撑，全部已在 vane-plugins 市场注册。
 
 **关键创新**：现有技能各自独立运行，本引擎将它们**编排为对抗协作网络**——不是简单的技能串联，而是让不同视角互相攻击、验证、融合。
 
