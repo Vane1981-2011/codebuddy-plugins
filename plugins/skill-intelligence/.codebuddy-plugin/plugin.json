@@ -1,12 +1,24 @@
 {
   "name": "skill-intelligence",
-  "description": "综合性技能智能管理中枢——覆盖技能发现（六市场联合搜索）、技能匹配（双模式评分推荐）、 技能健康（冗余/冲突/质量门禁）、技能生命周期（安装→匹配→升级→归档）全流程。 Comprehensive skill intelligence hub: discovery, matching, health monitoring, lifecycle management.\n",
-  "version": "1.0.0",
+  "description": "联合搜索多个技能市场，按场景匹配评分，并检查冗余、冲突、质量与生命周期。",
+  "version": "2.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "developer-tools",
   "skills": [
     "./skills/skill-intelligence"
+  ],
+  "displayName": "技能智能中枢",
+  "description_zh": "从「找技能」升级为「管理能力资产」",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/skill-intelligence.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/skill-intelligence",
+  "license": "MIT",
+  "keywords": [
+    "技能发现",
+    "评分",
+    "健康度",
+    "生命周期"
   ]
 }

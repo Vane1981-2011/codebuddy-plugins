@@ -1,12 +1,24 @@
 {
   "name": "cangjie-skill",
-  "description": "Distill a book, long-video transcript, podcast, course, or interview into a coherent set of executable skills. Use when the user asks to \"拆书\" / \"蒸馏一本书\" / \"把 XX 书做成 skill\" / \"把这个视频/播客/课程蒸馏成 skill\" / \"t",
-  "version": "1.0.0",
+  "description": "将书籍、长视频、播客、课程或访谈中的框架、原则与方法论提取为原子化、可复用的技能。",
+  "version": "1.0.3",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
   "category": "productivity",
   "skills": [
     "./skills/cangjie-skill"
+  ],
+  "displayName": "仓颉技能工坊",
+  "description_zh": "把一本书蒸馏成一组可执行技能",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/cangjie-skill.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/cangjie-skill",
+  "license": "MIT",
+  "keywords": [
+    "知识蒸馏",
+    "拆书",
+    "技能生成",
+    "RIA"
   ]
 }

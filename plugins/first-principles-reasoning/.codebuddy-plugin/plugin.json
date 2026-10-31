@@ -1,12 +1,24 @@
 {
   "name": "first-principles-reasoning",
-  "description": "智能体平台思维驱动的问题解决框架。强制四阶段闭环（准备→执行→质检→复盘）+ 三层推理体系（L1第一性原理/L2深度推理/L3创新超越）+ 五大工程实践（编排/工具/路由/沉淀/复用）。This skill should be used whenever the task requires structured reasoning, complex problem-solving, multi-s",
-  "version": "1.0.0",
+  "description": "以准备、执行、质检、复盘四阶段闭环组织推理，结合三层推理体系与工程化交付检查。",
+  "version": "2.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "developer-tools",
   "skills": [
     "./skills/first-principles-reasoning"
+  ],
+  "displayName": "第一性原理推理",
+  "description_zh": "把复杂问题拆到不可再拆的事实",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/first-principles-reasoning.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/first-principles-reasoning",
+  "license": "MIT",
+  "keywords": [
+    "推理",
+    "问题拆解",
+    "决策",
+    "质检"
   ]
 }

@@ -16,8 +16,8 @@ zcode:
     - tau-diagnosis
     - tau-diagnosis-zcode
     - mad-think-pipeline
+disable: false
 ---
-
 # 智能体平台思维 · 问题解决框架
 
 ## 核心信条

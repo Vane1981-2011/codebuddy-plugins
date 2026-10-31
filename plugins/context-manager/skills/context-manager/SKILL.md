@@ -2,8 +2,8 @@
 name: context-manager
 description: 跨对话上下文管理器。在每次新对话启动时读取 `~/Desktop/WorkBuddy上下文/上下文文档.md` 加载已有上下文；在每次对话结束前将该对话的关键进展、决策和待办事项更新回文档。触发词：加载上下文、读取上下文、更新上下文、保存上下文、context、上下文同步。应在每个对话开始时自动触发，并在每个对话结束前自动触发更新。
 agent_created: true
+disable: false
 ---
-
 # 跨对话上下文管理器
 
 管理 `~/Desktop/WorkBuddy上下文/上下文文档.md`，确保跨对话的信息衔接与连续性。

@@ -37,14 +37,13 @@ zcode:
   cross_validate_with:
     - agent-browser
 summary: 浏览器自动化抢购系统 v4.1 — Zcode优化：双通道+校准+拟人化+自适应循环
-disable: true
+disable: false
 assets:
   - snap_up.py (Zcode优化版主文件, 1729行, 45函数/36async)
   - config.json (简洁配置文件)
   - selectors.json (按钮探测输出)
   - calibration.json (时钟校准+RTT数据)
 ---
-
 # Snap-Up Assassin v4 — 多Tab并行抢购系统
 
 ## 版本演进

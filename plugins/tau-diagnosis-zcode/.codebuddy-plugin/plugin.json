@@ -1,12 +1,24 @@
 {
   "name": "tau-diagnosis-zcode",
-  "description": "增强版 τ 全链路诊断与升级引擎（zcode强化版）。继承 tau-diagnosis v2.0 四层时延诊断框架 + ZCode mad-think-pipeline S1-S4 并行推理管线，融合 Unified Bus 编排、Agent 分派矩阵、交叉验证与置信度量化。Trigger when the user needs enhanced diagnosis with parallel r",
-  "version": "1.0.0",
+  "description": "在标准 τ 诊断上叠加 S1–S4 并行推理、智能体分派、跨层验证和置信度量化。",
+  "version": "3.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "developer-tools",
   "skills": [
     "./skills/tau-diagnosis-zcode"
+  ],
+  "displayName": "τ 增强诊断",
+  "description_zh": "并行推理与交叉验证版全链路诊断",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/tau-diagnosis-zcode.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/tau-diagnosis-zcode",
+  "license": "MIT",
+  "keywords": [
+    "增强诊断",
+    "并行推理",
+    "交叉验证",
+    "置信度"
   ]
 }

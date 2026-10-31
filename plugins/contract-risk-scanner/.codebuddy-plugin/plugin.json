@@ -1,12 +1,24 @@
 {
   "name": "contract-risk-scanner",
-  "description": "合同风险扫描AI助手。在合同签署前的最后审核环节，自动扫描合同中的\"陷阱条款\"并标注风险等级。覆盖6大类高风险条款（无限责任/单方解约/验收模糊/付款不利/IP不清/管辖不利），支持立场加权（甲方/乙方/出租方/承租方等6种角色），输出结构化Excel报告+Markdown谈判备忘。触发词：合同扫描、合同风险、合同审查、审核合同、审合同、contract scan、contract risk、条款",
-  "version": "1.0.0",
+  "description": "扫描六类高风险条款，按六种谈判立场加权，输出结构化风险报告与谈判备忘。",
+  "version": "2.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "business",
   "skills": [
     "./skills/contract-risk-scanner"
+  ],
+  "displayName": "合同风险扫描器",
+  "description_zh": "签字之前，先把不利条款找出来",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/contract-risk-scanner.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/contract-risk-scanner",
+  "license": "MIT",
+  "keywords": [
+    "合同审查",
+    "风险条款",
+    "谈判",
+    "法律科技"
   ]
 }

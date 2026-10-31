@@ -26,9 +26,8 @@ zcode:
   cross_validate_with:
     - tau-diagnosis-zcode
     - first-principles-reasoning
-disable: true
+disable: false
 ---
-
 # τ 全链路诊断与升级
 
 ## Purpose

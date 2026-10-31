@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" fill="none">
+  <defs>
+    <linearGradient id="social-bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0F1B"/>
+      <stop offset="1" stop-color="#06090F"/>
+    </linearGradient>
+    <linearGradient id="social-accent" x1="78" y1="178" x2="680" y2="408" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F7FF"/>
+      <stop offset=".47" stop-color="#A8BFFF"/>
+      <stop offset="1" stop-color="#67D6C4"/>
+    </linearGradient>
+    <radialGradient id="social-glow-a" cx="0" cy="0" r="1" gradientTransform="translate(1080 70) rotate(133) scale(470 370)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6D8CFF" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#6D8CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="social-glow-b" cx="0" cy="0" r="1" gradientTransform="translate(650 590) rotate(-135) scale(430 290)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67D6C4" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#67D6C4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="social-grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" stroke="#8FB0FF" stroke-opacity=".05"/>
+    </pattern>
+    <filter id="terminal-shadow" x="680" y="110" width="590" height="390" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#social-bg)"/>
+  <rect width="1280" height="640" fill="url(#social-grid)"/>
+  <circle cx="1110" cy="70" r="360" fill="url(#social-glow-a)"/>
+  <circle cx="650" cy="590" r="250" fill="url(#social-glow-b)"/>
+
+  <g transform="translate(72 54)">
+    <rect width="50" height="50" rx="14" fill="#101728" stroke="#8FB0FF" stroke-opacity=".42"/>
+    <path d="M15 18 8 25l7 7m20-14 7 7-7 7M29 12l-8 26" stroke="url(#social-accent)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="25" cy="25" r="2.7" fill="#67D6C4"/>
+  </g>
+  <text x="138" y="78" fill="#EDF2FF" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',sans-serif" font-size="24" font-weight="700" letter-spacing="-.6">CodeBuddy</text>
+  <text x="272" y="78" fill="#8E9BB9" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',sans-serif" font-size="24" font-weight="500" letter-spacing="-.6">Skills</text>
+  <rect x="1050" y="57" width="158" height="36" rx="18" fill="#67D6C4" fill-opacity=".07" stroke="#67D6C4" stroke-opacity=".24"/>
+  <circle cx="1071" cy="75" r="4" fill="#67D6C4"/>
+  <text x="1084" y="80" fill="#9EEDDD" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" letter-spacing=".8">OPEN SOURCE · MIT</text>
+
+  <text x="72" y="160" fill="#8FB0FF" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="2.2">OPEN AGENT SKILLS · 2026</text>
+  <text x="70" y="238" fill="url(#social-accent)" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',sans-serif" font-size="55" font-weight="750" letter-spacing="-2.5">把专业工作交给</text>
+  <text x="70" y="312" fill="url(#social-accent)" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',sans-serif" font-size="55" font-weight="750" letter-spacing="-2.5">可验证的 Agent。</text>
+  <text x="72" y="368" fill="#A9B5D0" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',sans-serif" font-size="18">28 个可安装技能，7 大领域，5 层交付架构。</text>
+  <text x="72" y="399" fill="#75829F" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',sans-serif" font-size="15">财务 BP · 税务风控 · 合同审查 · 知识蒸馏 · 内容生产 · 工程护栏</text>
+
+  <g transform="translate(72 452)">
+    <rect width="458" height="54" rx="12" fill="#101728" stroke="#8FB0FF" stroke-opacity=".2"/>
+    <text x="18" y="22" fill="#67D6C4" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">$</text>
+    <text x="36" y="22" fill="#C8D4ED" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">/plugin marketplace add Vane1981-2011/codebuddy-plugins</text>
+    <text x="18" y="40" fill="#6F7C99" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">→ marketplace synced · 28 plugins · ready</text>
+  </g>
+  <g transform="translate(72 538)">
+    <circle cx="5" cy="5" r="5" fill="#F4B860"/>
+    <text x="20" y="10" fill="#8E9BB9" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',sans-serif" font-size="12">可发现 · 可安装 · 可执行 · 可验证 · 可分发</text>
+    <text x="836" y="10" fill="#6F7C99" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">github.com/Vane1981-2011/codebuddy-plugins</text>
+  </g>
+
+  <g filter="url(#terminal-shadow)">
+    <rect x="700" y="136" width="508" height="330" rx="20" fill="#0D1422" stroke="#8FB0FF" stroke-opacity=".23"/>
+    <path d="M700 176h508" stroke="#8FB0FF" stroke-opacity=".12"/>
+    <circle cx="726" cy="156" r="5" fill="#FF6B6B"/>
+    <circle cx="744" cy="156" r="5" fill="#FFD166"/>
+    <circle cx="762" cy="156" r="5" fill="#4ADE80"/>
+    <text x="784" y="160" fill="#6F7C99" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" letter-spacing=".6">codebuddy — skills</text>
+
+    <text x="728" y="215" fill="#67D6C4" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">$</text>
+    <text x="746" y="215" fill="#D6E0F8" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">/plugin install financial-bp-command-center</text>
+    <text x="746" y="238" fill="#6F7C99" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">→ skill enabled · README + contract loaded</text>
+    <text x="728" y="284" fill="#67D6C4" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">$</text>
+    <text x="746" y="284" fill="#D6E0F8" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">用客户盈利模型判断客户策略</text>
+    <text x="746" y="307" fill="#6F7C99" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">→ input validated · model selected · 4 checks</text>
+    <text x="728" y="353" fill="#8BE8CB" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">✓ 输出 · 计算模型 / 结构化 JSON / 经营建议</text>
+    <path d="M728 382h452" stroke="#8FB0FF" stroke-opacity=".11"/>
+    <text x="728" y="409" fill="#8FA0C0" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',sans-serif" font-size="12">一个插件 = 一个可交付工作流</text>
+    <text x="728" y="431" fill="#65728D" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',sans-serif" font-size="10">问题 · 输入 · 输出 · 流程 · 质量门 · 不适用边界</text>
+  </g>
+
+</svg>

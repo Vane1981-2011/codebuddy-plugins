@@ -1,5 +1,6 @@
 ---
-name: 稽影 · 多Agent信任基础设施
+name: jiying
+display_name: 稽影 · 多Agent信任基础设施
 version: 1.0.7
 description: 多Agent信任基础设施——宪法即代码。6Agent编排(Planner→Researcher→Creator→Reviewer+Executor+ShellPolicy)+康德/马尔库塞/海德格尔三宪法自动阻断/警告。TEP v1.0可信执行协议(Ed25519真签名)·7项质量门禁·10种认知偏见交叉验证·不确定性预算·断点恢复。React 19+Vite 8+Electron+Express。Apache 2.0开源。
 category: developer-tools
@@ -28,7 +29,6 @@ homepage: https://github.com/Vane1981-2011/jiying
 demo_url: https://vane1981-2011.github.io/jiying/portfolio/
 disable: false
 ---
-
 # 稽影 (Jiying) · 多Agent信任基础设施
 
 > 稽察审视，追影溯源 — 让每一次AI执行都变得可验证

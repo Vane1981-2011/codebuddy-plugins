@@ -2,7 +2,7 @@
 name: "mad-think-pipeline"
 description: >
   增强版深度推理管线 Skill。继承 zcode mad-think-pipeline v1.0 核心结构，融合四阶段闭环方法论 + 五支柱工程实践 + 三层推理体系 + Unified Bus 调度。将复杂问题从'直觉式回应'提升为'结构化推理管线'，实现 task-decompose → parallel-reason → cross-verify → synthesize 的全流程自动化编排。
-version: "2.0"
+version: "2.0.0"
 agent_created: true
 qualityGate: "strict"
 trigger_recommended:
@@ -27,12 +27,11 @@ zcode:
     - first-principles-reasoning
     - tau-diagnosis-zcode
 integrations:
-  - unified_bus: "route "重大架构决策" / "数据分析/报告""
+  - unified_bus: 'route "重大架构决策" / "数据分析/报告"'
   - task_quality_gate: "交付前 Gating"
   - feedback_loop: "自动缝合"
-disable: true
+disable: false
 ---
-
 # mad-think-pipeline v2.0 — 深度推理管线
 
 > 继承 zcode v1.0 核心管线结构，融合智能体平台思维方法论。

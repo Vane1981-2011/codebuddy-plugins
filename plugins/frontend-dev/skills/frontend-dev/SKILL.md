@@ -41,9 +41,8 @@ metadata:
     - React / Next.js documentation
     - AIDA Framework (Elmo Lewis)
     - p5.js documentation
-disable: true
+disable: false
 ---
-
 # Frontend Studio
 
 Build complete, production-ready frontend pages by orchestrating 5 specialized capabilities: design engineering, motion systems, AI-generated assets, persuasive copy, and generative art.

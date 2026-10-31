@@ -45,10 +45,9 @@ zcode:
   cross_validate_with:
     - multimodal-bridge
     - video-production-pipeline
-disable: true
+disable: false
 last_updated: 2026-07-01
 ---
-
 # Picture Book Pipeline — AI 绘本生产线
 
 ## 概览

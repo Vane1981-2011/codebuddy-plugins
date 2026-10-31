@@ -56,7 +56,7 @@ zcode:
   cross_validate_with: null
 slug: guipi-skill-intelligence
 displayName: Skill Intelligence（技能智能中枢）
-disable: true
+disable: false
 last_updated: 2026-07-02
 xiaping_trigger:
   - AI
@@ -74,7 +74,6 @@ xiaping_tags:
   - WorkBuddy
 xiaping_eval_strategy: developer
 ---
-
 # Skill Intelligence — 技能智能中枢
 
 ## Overview

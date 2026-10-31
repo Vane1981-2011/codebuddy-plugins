@@ -4,12 +4,8 @@ description_en: ''
 description_zh: ''
 name: investment-risk-engine
 version: 1.0.0
+disable: false
 ---
-
-
-
-
-
 # 📈 投资分析与风险量化引擎 v1.0
 
 > **计算层** — 为财务/风险/项目分析 Skill 提供量化计算与可视化输出。

@@ -1,12 +1,24 @@
 {
   "name": "expert-sync",
-  "description": "WorkBuddy 专家市场自动同步——检测新增/更新的内置专家与技能，自动匹配用户领域并安装。触发词：专家同步、检查专家更新、sync experts、更新技能库、市场新技能。",
-  "version": "1.0.0",
+  "description": "检测专家与技能市场的新增和更新，按领域相关性匹配，输出可审计的安装与升级建议。",
+  "version": "2.1.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "developer-tools",
   "skills": [
     "./skills/expert-sync"
+  ],
+  "displayName": "专家市场同步器",
+  "description_zh": "让能力库跟着专家市场持续更新",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/expert-sync.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/expert-sync",
+  "license": "MIT",
+  "keywords": [
+    "技能市场",
+    "同步",
+    "匹配",
+    "生命周期"
   ]
 }

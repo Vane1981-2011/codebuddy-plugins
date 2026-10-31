@@ -1,0 +1,69 @@
+name: Bug report
+description: 报告安装、加载、文档或展示站问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请先移除客户名称、合同原文、账号、密钥等敏感信息。
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题类型
+      options:
+        - 插件安装或市场加载
+        - 技能无法触发
+        - 技能输出不符合预期
+        - 文档、链接或展示站
+        - 安全或隐私
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: plugin
+    attributes:
+      label: 相关插件
+      description: 填写插件名；如果是仓库级问题，请填写 repository。
+      placeholder: financial-bp-command-center
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+      description: 请提供脱敏后的报错、截图或最小复现步骤。
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境
+      description: 宿主、版本、操作系统与安装方式。
+      placeholder: CodeBuddy 版本 / WorkBuddy 版本 / macOS 版本 / marketplace 或手动安装
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已阅读插件的 README 与“不适用”部分。
+          required: true
+        - label: 我已移除敏感信息和未脱敏客户数据。
+          required: true
+        - label: 我已搜索现有 Issue，确认不是重复问题。
+          required: true

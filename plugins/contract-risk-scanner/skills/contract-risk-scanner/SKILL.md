@@ -28,9 +28,8 @@ zcode:
   cross_validate_with:
     - tax-risk-early-warning-engine
     - financial-bp-command-center
-disable: true
+disable: false
 ---
-
 # Contract Risk Scanner — 合同风险扫描AI助手
 
 ## 目的

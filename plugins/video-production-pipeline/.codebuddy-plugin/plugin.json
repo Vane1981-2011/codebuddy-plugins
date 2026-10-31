@@ -1,12 +1,24 @@
 {
   "name": "video-production-pipeline",
-  "description": "Remotion-based declarative video production pipeline with 认识→模仿→创新→超越 methodology. Covers reference video reverse-engineering, React component-based pipeline, cover design engine, intelligent BGM, mul",
-  "version": "1.0.0",
+  "description": "基于 Remotion 的声明式视频流程，覆盖参考拆解、脚本、组件、封面、BGM、多分辨率与质检。",
+  "version": "4.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "content-creation",
   "skills": [
     "./skills/video-production-pipeline"
+  ],
+  "displayName": "声明式视频生产线",
+  "description_zh": "用组件和参数复现视频生产",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/video-production-pipeline.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/video-production-pipeline",
+  "license": "MIT",
+  "keywords": [
+    "视频",
+    "Remotion",
+    "模板",
+    "渲染"
   ]
 }

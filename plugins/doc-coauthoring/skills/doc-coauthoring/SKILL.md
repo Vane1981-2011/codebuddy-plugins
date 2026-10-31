@@ -6,9 +6,8 @@ description: Guide users through a structured workflow for co-authoring
   helps users efficiently transfer context, refine content through iteration,
   and verify the doc works for readers. Trigger when user mentions writing docs,
   creating proposals, drafting specs, or similar documentation tasks.
-disable: true
+disable: false
 ---
-
 # Doc Co-Authoring Workflow
 
 This skill provides a structured workflow for guiding users through collaborative document creation. Act as an active guide, walking users through three stages: Context Gathering, Refinement & Structure, and Reader Testing.

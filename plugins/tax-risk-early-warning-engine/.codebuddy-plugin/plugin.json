@@ -1,12 +1,24 @@
 {
   "name": "tax-risk-early-warning-engine",
-  "description": "建安企业税务风险预警引擎，覆盖发票/特殊业务/收入/成本费用4大类15个预警指标， 含数学公式、三区阈值、建安专属调整系数、JSON输出，适配金税四期稽查逻辑。\n",
+  "description": "覆盖发票、特殊业务、收入、成本费用四类十五项指标，提供三区阈值、建安参数与风险解释。",
   "version": "1.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "business",
   "skills": [
     "./skills/tax-risk-early-warning-engine"
+  ],
+  "displayName": "税务风险预警引擎",
+  "description_zh": "用指标和阈值把税务风险前置",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/tax-risk-early-warning-engine.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/tax-risk-early-warning-engine",
+  "license": "MIT",
+  "keywords": [
+    "税务风险",
+    "金税四期",
+    "建安",
+    "预警指标"
   ]
 }

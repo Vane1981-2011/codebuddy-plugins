@@ -34,10 +34,9 @@ zcode:
   bus_compatible: true
   cross_validate_with:
     - frontend-dev
-disable: true
+disable: false
 last_updated: 2026-07-01
 ---
-
 # SPA Engineering Guard
 
 Systematic patterns and anti-patterns for developing single-file HTML/JS/CSS applications

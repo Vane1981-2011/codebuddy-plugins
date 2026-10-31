@@ -1,12 +1,24 @@
 {
   "name": "tau-diagnosis",
-  "description": "Use this skill when the user asks to diagnose, audit, or upgrade an AI agent platform thinking methodology system using Tao's Law (韬定律) τ-minimization framework. Triggers include: '诊断思维体系', 'τ全链路诊断', ",
-  "version": "1.0.0",
+  "description": "用 τ-minimization 方法做四层时延诊断、能力堆叠审计和复利闭环设计。",
+  "version": "2.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "developer-tools",
   "skills": [
     "./skills/tau-diagnosis"
+  ],
+  "displayName": "τ 全链路诊断",
+  "description_zh": "定位智能体系统真正的时延与能力瓶颈",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/tau-diagnosis.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/tau-diagnosis",
+  "license": "MIT",
+  "keywords": [
+    "τ诊断",
+    "时延",
+    "能力审计",
+    "闭环"
   ]
 }

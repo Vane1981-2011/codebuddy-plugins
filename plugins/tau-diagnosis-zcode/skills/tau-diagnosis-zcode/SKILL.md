@@ -43,9 +43,8 @@ zcode:
     - tau-diagnosis
     - mad-think-pipeline
     - first-principles-reasoning
-disable: true
+disable: false
 ---
-
 # τ 全链路诊断与升级 — ZCode 增强版 v3.0
 
 > **继承关系：** tau-diagnosis v2.0（四层诊断框架） + mad-think-pipeline v2.0（S1-S4 并行推理管线）

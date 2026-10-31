@@ -55,10 +55,9 @@ zcode:
   cross_validate_with:
     - multimodal-bridge
     - picture-book-pipeline
-disable: true
+disable: false
 last_updated: 2026-07-05
 ---
-
 # Video Production Pipeline v4.0
 
 > **核心升级**：集成「认识→模仿→创新→超越」四阶段方法论，每次视频项目从逆向工程参考视频开始。

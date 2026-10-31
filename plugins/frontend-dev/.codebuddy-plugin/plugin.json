@@ -1,12 +1,24 @@
 {
   "name": "frontend-dev",
-  "description": "Full-stack frontend development combining premium UI design, cinematic animations, AI-generated media assets, persuasive copywriting, and visual art. Builds complete, visually striking web pages with ",
+  "description": "组合高级 UI、电影级动效、AI 素材与转化文案，完成落地页、营销站、产品页和数据看板。",
   "version": "1.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "developer-tools",
   "skills": [
     "./skills/frontend-dev"
+  ],
+  "displayName": "高级前端交付",
+  "description_zh": "从界面、动效到文案的一次性交付",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/frontend-dev.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/frontend-dev",
+  "license": "MIT",
+  "keywords": [
+    "前端",
+    "UI",
+    "动效",
+    "落地页"
   ]
 }

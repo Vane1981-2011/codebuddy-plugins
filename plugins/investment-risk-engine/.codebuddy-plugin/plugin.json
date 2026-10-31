@@ -1,12 +1,24 @@
 {
   "name": "investment-risk-engine",
-  "description": "风险分析相关技能",
+  "description": "基于组合绩效与风险模型计算夏普比率、最大回撤、资产配置和组合优化，并生成 HTML 分析报告。",
   "version": "1.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
   "category": "business",
   "skills": [
     "./skills/investment-risk-engine"
+  ],
+  "displayName": "投资风险量化引擎",
+  "description_zh": "用收益、回撤与组合指标检验投资判断",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/investment-risk-engine.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/investment-risk-engine",
+  "license": "MIT",
+  "keywords": [
+    "投资",
+    "组合",
+    "夏普比率",
+    "最大回撤"
   ]
 }

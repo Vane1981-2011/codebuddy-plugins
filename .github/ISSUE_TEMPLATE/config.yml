@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安装与使用文档
+    url: https://vane1981-2011.github.io/codebuddy-plugins/INSTALL.html
+    about: 先查看市场添加、插件安装、更新与排错步骤。
+  - name: 安全漏洞私密报告
+    url: https://github.com/Vane1981-2011/codebuddy-plugins/security/advisories/new
+    about: 不要在公开 Issue 中披露密钥、客户数据或可利用细节。

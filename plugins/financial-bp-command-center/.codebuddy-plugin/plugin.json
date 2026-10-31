@@ -1,12 +1,25 @@
 {
   "name": "financial-bp-command-center",
-  "description": "财务BP指挥中心，覆盖4讲22模块业财融合知识体系与8个可执行工具模型 (量本利分析/客户盈利/供应商评估/预算监控/投资可行性/能力评估/业财融合健康度/AI场景适配)。 支持建安行业专属参数，每个工具含完整计算逻辑、输入格式、JSON输出。\n",
+  "description": "覆盖四讲二十二模块与八个工具模型，从量本利、客户盈利到预算监控和投资可行性。",
   "version": "1.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "business",
   "skills": [
     "./skills/financial-bp-command-center"
+  ],
+  "displayName": "财务 BP 指挥中心",
+  "description_zh": "把业财融合方法变成可计算的经营工具",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/financial-bp-command-center.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/financial-bp-command-center",
+  "license": "MIT",
+  "keywords": [
+    "财务BP",
+    "业财融合",
+    "量本利",
+    "预算",
+    "投资"
   ]
 }

@@ -1,12 +1,24 @@
 {
   "name": "pdfkit-py",
-  "description": "Pure-Python PDF toolkit with 50 commands covering reading, editing, conversion, forms, encryption, OCR, and IR. Trigger on: PDF 阅读, 编辑, 转换, 合并, 拆分, 加密, 签名, OCR, 表单, 水印, 书签, 压缩, 裁剪, 旋转, pdfkit.",
+  "description": "以纯 Python 完成 PDF 阅读、编辑、转换、表单、加密、签名、OCR、书签、压缩和拆分合并。",
   "version": "1.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
   "category": "productivity",
   "skills": [
     "./skills/pdfkit-py"
+  ],
+  "displayName": "PDF 全能工具箱",
+  "description_zh": "五十条命令覆盖 PDF 全生命周期",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/pdfkit-py.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/pdfkit-py",
+  "license": "MIT",
+  "keywords": [
+    "PDF",
+    "OCR",
+    "表单",
+    "批处理"
   ]
 }

@@ -1,12 +1,24 @@
 {
   "name": "spa-engineering-guard",
-  "description": "Engineering guardrails for developing single-file HTML applications with WorkBuddy. Covers regex pitfalls, CSS selector traps, localStorage isolation, Q bank validation, lock/cancel/exit navigation pr",
-  "version": "1.0.0",
+  "description": "为单文件 HTML 应用提供正则、选择器、存储隔离、题库校验、导航协议和按钮规范等护栏。",
+  "version": "2.2.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "developer-tools",
   "skills": [
     "./skills/spa-engineering-guard"
+  ],
+  "displayName": "单文件应用工程护栏",
+  "description_zh": "让单文件 HTML 应用也能工程化交付",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/spa-engineering-guard.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/spa-engineering-guard",
+  "license": "MIT",
+  "keywords": [
+    "单文件应用",
+    "HTML",
+    "工程护栏",
+    "质量"
   ]
 }

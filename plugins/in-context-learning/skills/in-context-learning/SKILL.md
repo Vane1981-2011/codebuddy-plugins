@@ -23,9 +23,8 @@ zcode:
     - tau-diagnosis-zcode
     - first-principles-reasoning
     - frontend-dev
-disable: true
+disable: false
 ---
-
 # Transformer 上下文内学习框架 (In-Context Learning)
 
 ## Purpose

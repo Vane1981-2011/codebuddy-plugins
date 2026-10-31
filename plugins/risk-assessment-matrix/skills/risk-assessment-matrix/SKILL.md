@@ -6,14 +6,8 @@ description_en: ''
 description_zh: ''
 name: risk-assessment-matrix
 version: 2.3.0
+disable: false
 ---
-
-
-
-
-
-
-
 # Risk Assessment Matrix v2.3 · τ-MAD 集成
 
 Comprehensive risk assessment framework combining qualitative and quantitative methods. Produces a scored, prioritized risk register with heat map visualization, mitigation strategies, and residual risk tracking.

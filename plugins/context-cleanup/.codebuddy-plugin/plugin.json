@@ -1,12 +1,24 @@
 {
   "name": "context-cleanup",
-  "description": "上下文自动清理协议。每次对话任务完成后，自动识别可释放的上下文段落、移除冗余中间结果和缓存数据、压缩记忆写入，最大限度降低 token 消耗和积分浪费。 触发条件：任何实质性任务完成后（非闲聊/简单问答）；用户提到\"清理上下文\"\"释放内存\"\"降低消耗\"\"优化 token\"等关键词； 也可作为 Bus 默认后置中间件，随所有非平凡任务自动加载。 This skill should be used w",
+  "description": "在实质任务完成后识别可释放内容、移除冗余中间结果、压缩记忆写入，降低 token 与积分消耗。",
   "version": "1.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
   "category": "productivity",
   "skills": [
     "./skills/context-cleanup"
+  ],
+  "displayName": "上下文清理协议",
+  "description_zh": "任务收尾时释放上下文，而不是一直背着它",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/context-cleanup.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/context-cleanup",
+  "license": "MIT",
+  "keywords": [
+    "上下文清理",
+    "Token",
+    "记忆压缩",
+    "收尾"
   ]
 }

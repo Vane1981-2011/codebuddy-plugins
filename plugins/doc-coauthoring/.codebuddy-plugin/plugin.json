@@ -1,12 +1,24 @@
 {
   "name": "doc-coauthoring",
-  "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This wor",
+  "description": "通过上下文转移、分段迭代和读者测试，完成提案、技术规格、决策文档等结构化内容。",
   "version": "1.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
   "category": "productivity",
   "skills": [
     "./skills/doc-coauthoring"
+  ],
+  "displayName": "结构化文档共创",
+  "description_zh": "先对齐读者，再写内容",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/doc-coauthoring.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/doc-coauthoring",
+  "license": "MIT",
+  "keywords": [
+    "文档",
+    "提案",
+    "技术规格",
+    "共创"
   ]
 }

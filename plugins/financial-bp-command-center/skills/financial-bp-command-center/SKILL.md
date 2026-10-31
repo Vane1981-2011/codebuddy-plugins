@@ -50,10 +50,9 @@ category: finance-bp
 industry: construction-installation
 compatibility:
   - python3.10+
-disable: true
+disable: false
 agent_created: true
 ---
-
 # 财务BP指挥中心 v1.0.0 — Financial BP Command Center
 
 ## 1. 概述

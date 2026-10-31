@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>架构设计 · CodeBuddy Skills</title>
+  <meta name="description" content="五层架构，把 28 个技能组织成可发现、可安装、可执行、可验证、可分发的产品。">
+  <link rel="canonical" href="https://vane1981-2011.github.io/codebuddy-plugins/architecture.html">
+  <meta name="theme-color" content="#0a0e17">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CodeBuddy Skills">
+  <meta property="og:title" content="架构设计 · CodeBuddy Skills">
+  <meta property="og:description" content="五层架构，把 28 个技能组织成可发现、可安装、可执行、可验证、可分发的产品。">
+  <meta property="og:url" content="https://vane1981-2011.github.io/codebuddy-plugins/architecture.html">
+  <meta property="og:image" content="https://vane1981-2011.github.io/codebuddy-plugins/assets/social-preview.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="架构设计 · CodeBuddy Skills">
+  <meta name="twitter:description" content="五层架构，把 28 个技能组织成可发现、可安装、可执行、可验证、可分发的产品。">
+  <meta name="twitter:image" content="https://vane1981-2011.github.io/codebuddy-plugins/assets/social-preview.png">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-doc">
+<a class="skip-link" href="#main">跳到主要内容</a>
+<header class="site-header" data-header>
+  <div class="shell header-inner">
+    <a class="brand" href="index.html" aria-label="CodeBuddy Skills 首页">
+      <img src="assets/mark.svg" alt="" width="34" height="34">
+      <span class="brand-copy"><strong>CodeBuddy</strong><span>Skills</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span></span><span></span><span></span><span class="sr-only">打开菜单</span>
+    </button>
+    <nav class="site-nav" id="site-nav" data-nav>
+      <a class="nav-link" href="#domains">能力领域</a>
+<a class="nav-link" href="#plugins">28 个技能</a>
+<a class="nav-link" href="#architecture">架构</a>
+<a class="nav-link" href="#install">安装</a>
+<a class="nav-link" href="SKILL-CATALOG.html">完整目录</a>
+      <a class="nav-github" href="https://github.com/Vane1981-2011/codebuddy-plugins" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.4 7.4 0 0 1 8 3.8c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        <span>GitHub</span>
+      </a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="subpage-hero"><div class="shell"><p class="eyebrow">DOCUMENTATION</p><h1>架构设计</h1><p>五层架构，把 28 个技能组织成可发现、可安装、可执行、可验证、可分发的产品。</p></div></section>
+  <article class="shell prose"><blockquote>
+<p>这个仓库不是 28 个 Markdown
+文件的集合，而是一套“可发现、可安装、可执行、可验证、可分发”的 Agent
+技能产品架构。</p>
+</blockquote>
+<h2 id="1-设计目标">1. 设计目标</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>目标</th>
+<th>要解决的问题</th>
+<th>可检查的产物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可发现</td>
+<td>用户不知道有哪些能力、也不知道该用哪个</td>
+<td>首页、领域地图、搜索、独立详情页、Sitemap</td>
+</tr>
+<tr>
+<td>可理解</td>
+<td>只有一个技能名，缺少输入、输出和边界</td>
+<td>每个插件独立 README 与详情页</td>
+</tr>
+<tr>
+<td>可安装</td>
+<td>复制文件、改配置、手动注册，安装成本高</td>
+<td>marketplace + plugin.json + 一条安装命令</td>
+</tr>
+<tr>
+<td>可执行</td>
+<td>技能描述模糊，执行结果不可预期</td>
+<td>SKILL.md 中的触发、流程、输出与质量门</td>
+</tr>
+<tr>
+<td>可验证</td>
+<td>无法判断仓库是否完整、技能是否启用</td>
+<td>目录校验、YAML 校验、链接校验、CI</td>
+</tr>
+<tr>
+<td>可分发</td>
+<td>没有版本、没有发布包、无法迁移</td>
+<td>CHANGELOG、Release、ZIP 快照、Pages</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-五层架构">2. 五层架构</h2>
+<pre class="text"><code>L0  市场与发现层   README · 领域地图 · 搜索 · 详情页 · SEO / OG / Sitemap
+        ↓
+L1  能力目录层     catalog/plugins.json（单一事实源）
+        ↓
+L2  执行契约层     plugin.json + SKILL.md + 独立 README
+        ↓
+L3  质量与证据层   质量门禁 · 专业边界 · 来源说明 · CI 校验
+        ↓
+L4  分发与快照层   marketplace · Release ZIP · GitHub Pages · CHANGELOG</code></pre>
+<h3 id="l0--市场与发现层">L0 · 市场与发现层</h3>
+<p><strong>职责</strong>：让需要能力的人在 30
+秒内判断“这里有没有我要的东西”。</p>
+<ul>
+<li>首屏只回答三个问题：是什么、给谁用、怎么开始。</li>
+<li>7 大领域是导航，不是装饰；每个领域都写明能力边界和插件数量。</li>
+<li>28 个插件卡片支持关键词搜索与领域筛选。</li>
+<li>每个插件都有独立详情页，包含问题、输入、输出、流程、示例和“不适用”。</li>
+<li>静态站提供 canonical、Open Graph、Twitter Card、Schema.org 和
+sitemap。</li>
+</ul>
+<p><strong>失败模式</strong>：把所有技能平铺成一张长列表，用户只能靠名字猜用途。</p>
+<h3 id="l1--能力目录层">L1 · 能力目录层</h3>
+<p><strong>职责</strong>：用一个结构化文件统一“产品语言”和“机器可读数据”。</p>
+<p><code>catalog/plugins.json</code> 是单一事实源，保存：</p>
+<ul>
+<li>7 个领域：<code>id</code>、中英文名、图标、颜色、描述、数量。</li>
+<li>28
+个插件：名称、标题、领域、一句话、摘要、问题、输入、输出、流程、示例、不适用、标签、许可。</li>
+<li>仓库元数据：schema 版本、仓库地址、更新时间。</li>
+</ul>
+<p>生成链：</p>
+<pre class="text"><code>catalog/plugins.json
+  ├── .codebuddy-plugin/marketplace.json
+  ├── plugins/&lt;name&gt;/.codebuddy-plugin/plugin.json
+  ├── plugins/&lt;name&gt;/README.md
+  ├── docs/SKILL-CATALOG.md
+  ├── docs/SKILL-CATALOG.html
+  └── docs/plugins/&lt;name&gt;.html</code></pre>
+<p><strong>设计原则</strong>：人只维护一处，其他产物全部生成；生成结果进入版本控制，发布时无需依赖本地环境。</p>
+<h3 id="l2--执行契约层">L2 · 执行契约层</h3>
+<p><strong>职责</strong>：让“技能”从一段说明变成可执行、可验收的工作流。</p>
+<p>每个插件由三个文件构成最小闭环：</p>
+<pre class="text"><code>plugins/&lt;name&gt;/
+├── README.md                       # 给人看：问题、输入、输出、安装
+├── .codebuddy-plugin/plugin.json   # 给市场看：名称、版本、许可、技能入口
+└── skills/&lt;name&gt;/SKILL.md          # 给 Agent 看：触发、流程、交付契约</code></pre>
+<p><code>SKILL.md</code> 的 frontmatter 至少包含
+<code>name</code>、<code>description</code>，并统一设置
+<code>disable: false</code>，保证安装后可加载。正文负责：</p>
+<ol type="1">
+<li><strong>触发条件</strong>：什么问题应该调用它。</li>
+<li><strong>最小输入</strong>：没有哪些信息就不能可靠执行。</li>
+<li><strong>执行流程</strong>：按顺序拆成可检查的步骤。</li>
+<li><strong>输出契约</strong>：交付什么、以什么结构交付。</li>
+<li><strong>边界</strong>：什么场景不适用，哪些结论需要专业复核。</li>
+</ol>
+<h3 id="l3--质量与证据层">L3 · 质量与证据层</h3>
+<p><strong>职责</strong>：让“专业”不只是一种宣称，而是可追溯的证据链。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>门禁</th>
+<th>检查内容</th>
+<th>失败后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>目录一致性</td>
+<td>28 个插件、7 个领域、数量与名称一致</td>
+<td>市场出现幽灵条目</td>
+</tr>
+<tr>
+<td>技能可加载</td>
+<td>frontmatter 可解析、<code>disable</code> 不为 true</td>
+<td>安装后技能不可用</td>
+</tr>
+<tr>
+<td>文档完整性</td>
+<td>每个插件有 README、输入、输出、边界</td>
+<td>用户无法判断适用性</td>
+</tr>
+<tr>
+<td>链接完整性</td>
+<td>站内链接、插件链接、安装链接可解析</td>
+<td>用户路径中断</td>
+</tr>
+<tr>
+<td>专业边界</td>
+<td>财税、法律、投资类插件标注辅助属性</td>
+<td>误导为专业结论</td>
+</tr>
+<tr>
+<td>发布可复现</td>
+<td>构建脚本可从单一事实源重建产物</td>
+<td>仓库与线上不一致</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="l4--分发与快照层">L4 · 分发与快照层</h3>
+<p><strong>职责</strong>：让能力可以被安装、升级、迁移和归档。</p>
+<ul>
+<li><code>marketplace.json</code>：宿主添加市场时读取的入口。</li>
+<li><code>plugin.json</code>：单插件安装元数据。</li>
+<li><code>v1.0.0</code> Release：完整 ZIP
+快照，便于离线迁移和归档。</li>
+<li>GitHub Pages：公开可访问的产品展示与详情页。</li>
+<li><code>CHANGELOG.md</code>：版本变更与兼容性说明。</li>
+</ul>
+<h2 id="3-插件之间如何组合">3. 插件之间如何组合</h2>
+<p>单个插件解决一个明确问题；组合后形成端到端工作流。</p>
+<h3 id="财务-bp-工作流">财务 BP 工作流</h3>
+<pre class="text"><code>contract-risk-scanner
+        ↓  识别付款、验收、违约与管辖风险
+tax-risk-early-warning-engine
+        ↓  检查发票、收入、成本费用与特殊业务风险
+financial-bp-command-center
+        ↓  量本利、客户盈利、预算与投资可行性
+investment-risk-engine
+        ↓  收益、回撤、组合指标复核
+risk-assessment-matrix
+        ↓  统一风险排序与决策建议</code></pre>
+<h3 id="知识蒸馏工作流">知识蒸馏工作流</h3>
+<pre class="text"><code>markitdown → weread-skills → cangjie-skill → doc-coauthoring
+  格式统一      阅读痕迹        拆成技能        写成文档</code></pre>
+<h3 id="内容生产工作流">内容生产工作流</h3>
+<pre class="text"><code>creative-origin-engine → picture-book-pipeline → video-production-pipeline
+        创意辩论              版面与角色一致性          声明式视频生产
+                                   ↘ pixabay-bgm-search</code></pre>
+<h3 id="元能力工作流">元能力工作流</h3>
+<pre class="text"><code>context-manager → mad-think-pipeline → jiying → context-cleanup
+   跨会话记忆          并行推理与交叉验证      信任与门禁      收尾释放</code></pre>
+<h2 id="4-目录结构">4. 目录结构</h2>
+<pre class="text"><code>codebuddy-plugins/
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
+├── CHANGELOG.md
+├── THIRD_PARTY_NOTICES.md
+├── catalog/
+│   └── plugins.json                 # 单一事实源
+├── .codebuddy-plugin/
+│   └── marketplace.json             # 市场入口
+├── plugins/
+│   └── &lt;28 个插件&gt;/
+│       ├── README.md
+│       ├── .codebuddy-plugin/plugin.json
+│       └── skills/&lt;name&gt;/SKILL.md
+├── docs/
+│   ├── index.html                   # 展示站首页
+│   ├── plugins/&lt;name&gt;.html          # 28 个详情页
+│   ├── SKILL-CATALOG.html           # 可筛选的完整索引
+│   ├── ARCHITECTURE.md / .html
+│   ├── BENCHMARK.md / .html
+│   ├── QUALITY.md / .html
+│   ├── INSTALL.md / .html
+│   ├── styles.css
+│   ├── app.js
+│   └── assets/
+├── scripts/
+│   ├── build_catalog.py
+│   ├── build_site.py
+│   └── validate_repo.py
+└── .github/
+    ├── ISSUE_TEMPLATE/
+    ├── PULL_REQUEST_TEMPLATE.md
+    └── workflows/validate.yml</code></pre>
+<h2 id="5-为什么不做成一个大而全的技能">5.
+为什么不做成一个大而全的技能</h2>
+<ul>
+<li><strong>安装粒度</strong>：用户只需要财务 BP，不应该被迫安装 28
+个技能。</li>
+<li><strong>维护边界</strong>：一个插件的变更不影响其他插件的版本与许可。</li>
+<li><strong>质量责任</strong>：每个插件都能独立验收，而不是用一个“总技能”掩盖薄弱环节。</li>
+<li><strong>组合能力</strong>：插件通过输入输出契约组合，而不是通过复制粘贴提示词组合。</li>
+<li><strong>可发现性</strong>：领域 → 插件 →
+详情页的层级，符合用户从问题到方案的决策路径。</li>
+</ul>
+<h2 id="6-版本与演进">6. 版本与演进</h2>
+<ul>
+<li>插件版本以 <code>plugin.json</code> 与 <code>SKILL.md</code>
+中的较新语义版本为准。</li>
+<li>破坏性变更必须更新主版本，并在 <code>CHANGELOG.md</code>
+中写明迁移方式。</li>
+<li>新增插件必须同时更新目录、市场、README、详情页和校验规则。</li>
+<li>每次发布生成完整 ZIP 快照，保证离线可迁移。</li>
+</ul>
+<hr />
+<p><a href="index.html">返回首页</a> · <a
+href="QUALITY.html">查看质量门禁</a> · <a
+href="BENCHMARK.html">查看高星项目对标</a></p>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <img src="assets/mark.svg" alt="" width="30" height="30">
+        <span class="brand-copy"><strong>CodeBuddy</strong><span>Skills</span></span>
+      </a>
+      <p>不是更多提示词，而是可发现、可安装、可验证的专业工作流。</p>
+      <p class="muted">28 个插件 · 7 大领域 · MIT / Apache-2.0</p>
+    </div>
+    <div>
+      <h3>产品</h3>
+      <a href="#domains">能力领域</a>
+      <a href="#plugins">技能目录</a>
+      <a href="SKILL-CATALOG.html">完整索引</a>
+      <a href="INSTALL.html">安装指南</a>
+    </div>
+    <div>
+      <h3>工程</h3>
+      <a href="ARCHITECTURE.html">架构设计</a>
+      <a href="BENCHMARK.html">高星项目对标</a>
+      <a href="QUALITY.html">质量门禁</a>
+      <a href="#install">30 秒安装</a>
+    </div>
+    <div>
+      <h3>社区</h3>
+      <a href="https://github.com/Vane1981-2011/codebuddy-plugins" target="_blank" rel="noopener">GitHub 仓库</a>
+      <a href="https://github.com/Vane1981-2011/codebuddy-plugins/issues" target="_blank" rel="noopener">问题反馈</a>
+      <a href="https://github.com/Vane1981-2011/codebuddy-plugins/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">贡献指南</a>
+      <a href="https://github.com/Vane1981-2011/codebuddy-plugins/releases" target="_blank" rel="noopener">版本发布</a>
+    </div>
+  </div>
+  <div class="shell footer-bottom">
+    <span>© 2026 Vane · CodeBuddy Skills</span>
+    <span>Built as an open, auditable Agent Skills catalog.</span>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

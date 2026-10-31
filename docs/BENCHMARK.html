@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高星项目对标 · CodeBuddy Skills</title>
+  <meta name="description" content="拆解 7 个高星 Agent Skills 仓库的结构共性，并说明本仓库如何落地。">
+  <link rel="canonical" href="https://vane1981-2011.github.io/codebuddy-plugins/benchmark.html">
+  <meta name="theme-color" content="#0a0e17">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CodeBuddy Skills">
+  <meta property="og:title" content="高星项目对标 · CodeBuddy Skills">
+  <meta property="og:description" content="拆解 7 个高星 Agent Skills 仓库的结构共性，并说明本仓库如何落地。">
+  <meta property="og:url" content="https://vane1981-2011.github.io/codebuddy-plugins/benchmark.html">
+  <meta property="og:image" content="https://vane1981-2011.github.io/codebuddy-plugins/assets/social-preview.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="高星项目对标 · CodeBuddy Skills">
+  <meta name="twitter:description" content="拆解 7 个高星 Agent Skills 仓库的结构共性，并说明本仓库如何落地。">
+  <meta name="twitter:image" content="https://vane1981-2011.github.io/codebuddy-plugins/assets/social-preview.png">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-doc">
+<a class="skip-link" href="#main">跳到主要内容</a>
+<header class="site-header" data-header>
+  <div class="shell header-inner">
+    <a class="brand" href="index.html" aria-label="CodeBuddy Skills 首页">
+      <img src="assets/mark.svg" alt="" width="34" height="34">
+      <span class="brand-copy"><strong>CodeBuddy</strong><span>Skills</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span></span><span></span><span></span><span class="sr-only">打开菜单</span>
+    </button>
+    <nav class="site-nav" id="site-nav" data-nav>
+      <a class="nav-link" href="#domains">能力领域</a>
+<a class="nav-link" href="#plugins">28 个技能</a>
+<a class="nav-link" href="#architecture">架构</a>
+<a class="nav-link" href="#install">安装</a>
+<a class="nav-link" href="SKILL-CATALOG.html">完整目录</a>
+      <a class="nav-github" href="https://github.com/Vane1981-2011/codebuddy-plugins" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.4 7.4 0 0 1 8 3.8c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        <span>GitHub</span>
+      </a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="subpage-hero"><div class="shell"><p class="eyebrow">DOCUMENTATION</p><h1>高星项目对标</h1><p>拆解 7 个高星 Agent Skills 仓库的结构共性，并说明本仓库如何落地。</p></div></section>
+  <article class="shell prose"><blockquote>
+<p>对标不是为了复制外观，而是找出“一个技能仓库为什么会被看见、被理解、被安装、被信任”的结构性原因。</p>
+</blockquote>
+<h2 id="1-采样方法与快照">1. 采样方法与快照</h2>
+<ul>
+<li>采样时间：2026-10-31</li>
+<li>数据来源：GitHub REST API <code>repos/{owner}/{repo}</code> 的
+<code>stargazers_count</code></li>
+<li>采样对象：Agent Skills / Claude Skills
+方向上公开、结构完整、可安装的代表性仓库</li>
+<li>说明：Star
+数会随时间变化，本文只记录采样时点，不将热度等同于质量。</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>仓库</th>
+<th style="text-align: right;">Stars（采样）</th>
+<th>代表性结构</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a
+href="https://github.com/obra/superpowers"><code>obra/superpowers</code></a></td>
+<td style="text-align: right;">309,458</td>
+<td>方法论清晰、多宿主安装、技能目录内附脚本与测试</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/anthropics/skills"><code>anthropics/skills</code></a></td>
+<td style="text-align: right;">185,347</td>
+<td>官方技能规范、模板与极简目录</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/addyosmani/agent-skills"><code>addyosmani/agent-skills</code></a></td>
+<td style="text-align: right;">112,011</td>
+<td>Hero 视觉、生命周期图、30 秒 Quick Start、<code>docs/</code> 与
+<code>evals/</code></td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/Leonxlnx/taste-skill"><code>Leonxlnx/taste-skill</code></a></td>
+<td style="text-align: right;">106,365</td>
+<td>单一价值主张明确、垂直场景清晰</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/ComposioHQ/awesome-claude-skills"><code>ComposioHQ/awesome-claude-skills</code></a></td>
+<td style="text-align: right;">78,357</td>
+<td>Banner、徽章、TOC、分类目录、一句话说明</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/vercel-labs/skills"><code>vercel-labs/skills</code></a></td>
+<td style="text-align: right;">37,301</td>
+<td>CLI 快速开始、安装与排错文档、信息层级简洁</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/alirezarezvani/claude-skills"><code>alirezarezvani/claude-skills</code></a></td>
+<td style="text-align: right;">29,038</td>
+<td>大数字徽章、领域表、按宿主安装、分类目录</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-七个共性而不是七个巧合">2. 七个共性，而不是七个巧合</h2>
+<h3 id="21-首屏先回答是什么给谁用解决什么问题">2.1
+首屏先回答“是什么、给谁用、解决什么问题”</h3>
+<p>高星仓库不会用“赋能、闭环、生态”开场，而是用一句可验证的话说明用途。用户在前
+10 秒内要能判断：</p>
+<ul>
+<li>这是技能、插件、CLI，还是教程？</li>
+<li>它解决的是哪类任务？</li>
+<li>我是否属于目标用户？</li>
+<li>我需要付出多少安装成本？</li>
+</ul>
+<p><strong>本仓库的落点</strong>：首屏标题“把专业工作交给可验证的
+Agent”，副标题直接列出 28 个技能覆盖的领域，并提供“30
+秒安装”和“浏览技能”两个明确入口。</p>
+<h3 id="22-安装路径必须短到可以背下来">2.2
+安装路径必须短到可以背下来</h3>
+<p>高星项目的 Quick Start 通常只有 1–3
+条命令，并且命令块可以被直接复制。</p>
+<p><strong>本仓库的落点</strong>：</p>
+<pre class="text"><code>/plugin marketplace add Vane1981-2011/codebuddy-plugins
+/plugin install financial-bp-command-center</code></pre>
+<p>首页、每个插件
+README、每个详情页都提供同样的安装路径，避免用户在不同页面看到不同说法。</p>
+<h3 id="23-分类是导航不是标签墙">2.3 分类是导航，不是标签墙</h3>
+<p>成熟仓库按“用户任务”分类，而不是按文件名、作者或技术栈分类。分类数量通常控制在
+5–10 个，每个分类下有 3–8 个条目。</p>
+<p><strong>本仓库的落点</strong>：7 大领域、28
+个插件，每个领域都有明确的能力描述和数量；首页提供领域卡片、筛选器与领域到插件的映射表。</p>
+<h3 id="24-每个技能都要有独立的适用边界">2.4
+每个技能都要有独立的“适用边界”</h3>
+<p>高星项目不只写“能做什么”，还写“什么时候不要用”。这是专业感的来源，也是降低误用的关键。</p>
+<p><strong>本仓库的落点</strong>：<code>catalog/plugins.json</code>
+为每个插件设置
+<code>problem</code>、<code>input</code>、<code>output</code>、<code>workflow</code>、<code>example</code>、<code>not_for</code>
+六个字段；每个详情页都有 <code>NOT FOR</code> 区块。</p>
+<h3 id="25-文档示例和评估是产品的一部分">2.5
+文档、示例和评估是产品的一部分</h3>
+<p>成熟仓库通常包含：</p>
+<ul>
+<li><code>README.md</code>：入口与快速开始</li>
+<li><code>docs/</code>：安装、架构、贡献、排错</li>
+<li><code>examples/</code> 或
+<code>evals/</code>：真实输入与预期输出</li>
+<li><code>CHANGELOG.md</code>：版本与兼容性</li>
+<li><code>LICENSE</code>、<code>SECURITY.md</code>、Issue
+模板：可信度基础设施</li>
+</ul>
+<p><strong>本仓库的落点</strong>：新增
+<code>docs/ARCHITECTURE.md</code>、<code>docs/INSTALL.md</code>、<code>docs/QUALITY.md</code>、<code>docs/BENCHMARK.md</code>、<code>CHANGELOG.md</code>、<code>SECURITY.md</code>、Issue
+表单与 CI。</p>
+<h3 id="26-视觉不是为了好看而是为了建立信息层级">2.6
+视觉不是为了好看，而是为了建立信息层级</h3>
+<p>高星仓库的
+Banner、截图、架构图和徽章，承担的是“快速定位信息”的功能：</p>
+<ul>
+<li>Banner 说明品牌与价值主张。</li>
+<li>架构图说明系统边界。</li>
+<li>截图说明真实产品形态。</li>
+<li>徽章说明许可、版本、平台与构建状态。</li>
+</ul>
+<p><strong>本仓库的落点</strong>：新增
+<code>docs/assets/banner.svg</code>、<code>mark.svg</code>、首页截图、社交预览图；首页使用五层架构图、领域地图和插件卡片建立层级。</p>
+<h3 id="27-发布与维护机制决定看起来是否可信">2.7
+发布与维护机制决定“看起来是否可信”</h3>
+<p>有 Release、有 CI、有 Issue
+模板、有版本记录的仓库，更容易被判断为“有人维护”。这不是装饰，而是降低使用者的决策风险。</p>
+<p><strong>本仓库的落点</strong>：<code>v1.0.0</code> Release、ZIP
+快照、GitHub Pages、<code>validate.yml</code>、Issue 表单、PR
+模板、<code>THIRD_PARTY_NOTICES.md</code>。</p>
+<h2 id="3-结构映射借鉴项--本仓库实现">3. 结构映射：借鉴项 →
+本仓库实现</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>借鉴项</th>
+<th>来源项目</th>
+<th>本仓库实现</th>
+<th>可检查产物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一句话价值主张</td>
+<td><code>taste-skill</code>、<code>superpowers</code></td>
+<td>首屏标题与副标题</td>
+<td><code>docs/index.html</code></td>
+</tr>
+<tr>
+<td>30 秒安装</td>
+<td><code>agent-skills</code>、<code>vercel-labs/skills</code></td>
+<td>两条命令 + 复制按钮</td>
+<td>首页、README、详情页</td>
+</tr>
+<tr>
+<td>领域分类</td>
+<td><code>awesome-claude-skills</code></td>
+<td>7 大领域、28 插件</td>
+<td><code>catalog/plugins.json</code></td>
+</tr>
+<tr>
+<td>独立技能说明</td>
+<td><code>anthropics/skills</code></td>
+<td>28 个独立 README</td>
+<td><code>plugins/*/README.md</code></td>
+</tr>
+<tr>
+<td>架构与生命周期</td>
+<td><code>agent-skills</code></td>
+<td>五层架构 + 执行契约</td>
+<td><code>docs/ARCHITECTURE.md</code></td>
+</tr>
+<tr>
+<td>评估与质量</td>
+<td><code>superpowers</code></td>
+<td>CI 校验 + 发布门禁</td>
+<td><code>.github/workflows/validate.yml</code></td>
+</tr>
+<tr>
+<td>视觉与社交预览</td>
+<td>多个高星仓库</td>
+<td>Banner、截图、OG 图</td>
+<td><code>docs/assets/</code></td>
+</tr>
+<tr>
+<td>版本与发布</td>
+<td>成熟开源项目</td>
+<td><code>v1.0.0</code> + ZIP</td>
+<td>GitHub Releases</td>
+</tr>
+<tr>
+<td>贡献入口</td>
+<td>成熟开源项目</td>
+<td>Issue 表单、PR 模板、贡献指南</td>
+<td><code>.github/</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="4-我们刻意没有照搬的部分">4. 我们刻意没有照搬的部分</h2>
+<ul>
+<li><strong>不追求技能数量</strong>：28 个可安装插件比 300
+个无法判断质量的条目更有用。</li>
+<li><strong>不制造虚假热度</strong>：不购买 Star、不写“10
+万用户”这类无法验证的数字。</li>
+<li><strong>不把 Star 当目标</strong>：Star
+是结果，不是产品指标；先解决“被看见、被理解、被安装、被信任”。</li>
+<li><strong>不复制他人文案与结构细节</strong>：只借鉴信息架构与工程实践，所有插件说明基于本仓库真实能力重写。</li>
+<li><strong>不把专业判断包装成确定结论</strong>：财税、法律、投资类插件明确标注辅助属性与复核要求。</li>
+</ul>
+<h2 id="5-结论">5. 结论</h2>
+<p>高星项目的共同点不是“写得更多”，而是：</p>
+<ol type="1">
+<li>让用户在 10 秒内知道这是什么。</li>
+<li>让用户在 30 秒内完成安装。</li>
+<li>让用户在 3 分钟内判断一个技能是否适合自己。</li>
+<li>让用户在遇到问题时知道去哪里反馈。</li>
+<li>让贡献者知道如何新增或修改一个技能。</li>
+</ol>
+<p>本仓库的改造围绕这五件事展开，而不是围绕“再写 28 段介绍”展开。</p>
+<hr />
+<p><a href="index.html">返回首页</a> · <a
+href="ARCHITECTURE.html">查看架构</a> · <a
+href="QUALITY.html">查看质量门禁</a></p>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <img src="assets/mark.svg" alt="" width="30" height="30">
+        <span class="brand-copy"><strong>CodeBuddy</strong><span>Skills</span></span>
+      </a>
+      <p>不是更多提示词，而是可发现、可安装、可验证的专业工作流。</p>
+      <p class="muted">28 个插件 · 7 大领域 · MIT / Apache-2.0</p>
+    </div>
+    <div>
+      <h3>产品</h3>
+      <a href="#domains">能力领域</a>
+      <a href="#plugins">技能目录</a>
+      <a href="SKILL-CATALOG.html">完整索引</a>
+      <a href="INSTALL.html">安装指南</a>
+    </div>
+    <div>
+      <h3>工程</h3>
+      <a href="ARCHITECTURE.html">架构设计</a>
+      <a href="BENCHMARK.html">高星项目对标</a>
+      <a href="QUALITY.html">质量门禁</a>
+      <a href="#install">30 秒安装</a>
+    </div>
+    <div>
+      <h3>社区</h3>
+      <a href="https://github.com/Vane1981-2011/codebuddy-plugins" target="_blank" rel="noopener">GitHub 仓库</a>
+      <a href="https://github.com/Vane1981-2011/codebuddy-plugins/issues" target="_blank" rel="noopener">问题反馈</a>
+      <a href="https://github.com/Vane1981-2011/codebuddy-plugins/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">贡献指南</a>
+      <a href="https://github.com/Vane1981-2011/codebuddy-plugins/releases" target="_blank" rel="noopener">版本发布</a>
+    </div>
+  </div>
+  <div class="shell footer-bottom">
+    <span>© 2026 Vane · CodeBuddy Skills</span>
+    <span>Built as an open, auditable Agent Skills catalog.</span>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

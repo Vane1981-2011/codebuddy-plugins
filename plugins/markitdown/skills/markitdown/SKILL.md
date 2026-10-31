@@ -11,9 +11,8 @@ allowed-tools:
 license: MIT license
 metadata:
   skill-author: K-Dense Inc.
-disable: true
+disable: false
 ---
-
 # MarkItDown - File to Markdown Conversion
 
 ## Overview

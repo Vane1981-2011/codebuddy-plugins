@@ -21,9 +21,8 @@ zcode:
   cross_validate_with:
     - frontend-dev
     - video-production-pipeline
-disable: true
+disable: false
 ---
-
 # 多模态桥接层 — Multimodal Bridge
 
 ## Purpose

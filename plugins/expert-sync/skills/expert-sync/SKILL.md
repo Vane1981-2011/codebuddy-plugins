@@ -5,9 +5,8 @@ description: WorkBuddy
   experts、更新技能库、市场新技能。
 version: 2.1.0
 agent_created: true
-disable: true
+disable: false
 ---
-
 # Expert Sync v2.1 — 专家市场自动同步器
 
 自动监控 WorkBuddy 内置专家市场（experts + cb_teams + official）变化，

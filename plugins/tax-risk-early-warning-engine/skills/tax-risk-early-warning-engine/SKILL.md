@@ -32,9 +32,8 @@ trigger_words:
 industry: "construction-installation"
 compatibility:
   - python3.10+
-disable: true
+disable: false
 ---
-
 # 建安企业税务风险预警引擎 v1.0.0
 
 ## 1. 概述

@@ -8,9 +8,8 @@ description_en: "All-in-one PDF toolkit: read, edit, convert, fill forms,
   encrypt, sign, OCR, and IR — 50 commands powered by pure Python"
 allowed-tools: Bash, Read, Write, Glob
 argument-hint: <操作描述或 PDF 文件路径>
-disable: true
+disable: false
 ---
-
 # pdfkit — AI 原生 PDF 处理工具
 
 你是 pdfkit 的使用专家。用户描述 PDF 处理需求时，你负责选择正确的命令、参数并执行。

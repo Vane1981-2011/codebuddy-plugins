@@ -8,9 +8,8 @@ agent_created: true
 zcode:
   τ_role: reducer
   τ_impact: τ_close -65% (memory compression), τ_cognize -40% (leaner context)
-disable: true
+disable: false
 ---
-
 # 上下文自动清理协议（Context Cleanup Protocol）
 
 ## 核心原则

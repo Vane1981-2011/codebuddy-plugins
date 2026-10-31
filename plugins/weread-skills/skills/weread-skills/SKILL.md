@@ -45,10 +45,9 @@ zcode:
     - {'metric': 'τ_close', 'direction': 'reduce', 'target': '15%', 'mechanism': '自动Obsidian同步 + 知识库归档'}
   bus_compatible: true
   cross_validate_with:
-disable: true
+disable: false
 last_updated: 2026-07-02
 ---
-
 # WeRead — 微信读书助手
 
 通过 Agent API Gateway 调用微信读书接口，提供搜索、书架、笔记、书评等能力。**v3.0 新增：知识库笔记质量标准与生成规范 + Cookie刷新管理**。

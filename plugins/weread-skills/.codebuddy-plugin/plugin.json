@@ -1,12 +1,24 @@
 {
   "name": "weread-skills",
-  "description": "微信读书助手 — 搜索书籍、管理书架、查看笔记划线、浏览书评、阅读统计、发现推荐好书、 生成高质量Obsidian知识笔记、Cookie刷新管理。WeRead assistant — search, bookshelf, notes, reviews, stats, cookie.\n",
-  "version": "1.0.0",
+  "description": "搜索书籍、管理书架、读取划线和书评、查看阅读统计，并生成 Obsidian 知识笔记。",
+  "version": "3.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
   "category": "productivity",
   "skills": [
     "./skills/weread-skills"
+  ],
+  "displayName": "微信读书助手",
+  "description_zh": "把阅读痕迹整理成可用的知识笔记",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/weread-skills.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/weread-skills",
+  "license": "MIT",
+  "keywords": [
+    "微信读书",
+    "阅读笔记",
+    "Obsidian",
+    "知识管理"
   ]
 }

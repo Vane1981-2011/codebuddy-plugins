@@ -1,12 +1,24 @@
 {
   "name": "picture-book-pipeline",
-  "description": "全流程 AI 绘本生产线。覆盖7种作品类型（对话解经/漫画冒险/单图叙事/诗歌独白/段落叙事/自然悟道/儿童绘本）、 4种角色系统、5种版面模式。Full-stack AI picture book production line.\n",
-  "version": "1.0.0",
+  "description": "覆盖七种作品类型、四种角色系统和五种版面模式，保持角色与风格一致性。",
+  "version": "3.5.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
-  "category": "productivity",
+  "category": "content-creation",
   "skills": [
     "./skills/picture-book-pipeline"
+  ],
+  "displayName": "AI 绘本生产线",
+  "description_zh": "从故事结构到版面一致性的完整流水线",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/picture-book-pipeline.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/picture-book-pipeline",
+  "license": "MIT",
+  "keywords": [
+    "绘本",
+    "分镜",
+    "角色一致性",
+    "版面"
   ]
 }

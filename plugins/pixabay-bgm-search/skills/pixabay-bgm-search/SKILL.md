@@ -7,9 +7,8 @@ description: |-
   当用户需要搜索背景音乐、为视频配BGM、搜索免费可商用音乐、或在 Pixabay/Freesound 上找音乐时，
   加载此技能。关键词：BGM、背景音乐、配乐、Pixabay、Freesound、免费音乐、视频配乐。
 agent_created: true
-disable: true
+disable: false
 ---
-
 # Pixabay BGM Search — 智能背景音乐搜索与下载
 
 自动从视频文案中提取音乐关键词，搜索 Pixabay / Freesound 匹配的背景音乐，展示结果并支持下载。

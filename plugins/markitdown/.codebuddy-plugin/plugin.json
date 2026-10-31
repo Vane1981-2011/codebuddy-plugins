@@ -1,12 +1,24 @@
 {
   "name": "markitdown",
-  "description": "Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcription), HTML, CSV, JSON, XML, ZIP, YouTube URLs, EPubs and more.",
+  "description": "将 PDF、Office、图片、音频、网页、表格、压缩包和视频链接转换为 Markdown，保留结构信息。",
   "version": "1.0.0",
   "author": {
-    "name": "vane"
+    "name": "Vane1981",
+    "url": "https://github.com/Vane1981-2011"
   },
   "category": "productivity",
   "skills": [
     "./skills/markitdown"
+  ],
+  "displayName": "MarkItDown 文档转换",
+  "description_zh": "把多种格式统一成可检索的 Markdown",
+  "homepage": "https://vane1981-2011.github.io/codebuddy-plugins/plugins/markitdown.html",
+  "repository": "https://github.com/Vane1981-2011/codebuddy-plugins/tree/main/plugins/markitdown",
+  "license": "MIT",
+  "keywords": [
+    "Markdown",
+    "OCR",
+    "文档转换",
+    "知识库"
   ]
 }
