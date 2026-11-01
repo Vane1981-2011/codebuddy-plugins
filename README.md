@@ -7,6 +7,15 @@
 <p align="center"><strong>把专业工作交给可验证的 Agent。</strong><br>
 28 个可安装的 AI Agent 技能：财务 BP、税务风控、合同审查、知识蒸馏、内容生产与工程护栏。</p>
 
+**两行命令装走一个插件（复制即用）**
+
+```text
+/plugin marketplace add Vane1981-2011/codebuddy-plugins
+/plugin install financial-bp-command-center
+```
+
+装完直接描述任务，或显式调用 `/financial-bp-command-center`。需要支持 CodeBuddy / WorkBuddy 插件市场的宿主；其他宿主见[安装指南](docs/INSTALL.md)。
+
 <p align="center">
   <a href="https://github.com/Vane1981-2011/codebuddy-plugins/actions/workflows/validate.yml"><img alt="Validate" src="https://github.com/Vane1981-2011/codebuddy-plugins/actions/workflows/validate.yml/badge.svg"></a>
   <a href="https://github.com/Vane1981-2011/codebuddy-plugins/releases"><img alt="Release" src="https://img.shields.io/github/v/release/Vane1981-2011/codebuddy-plugins?color=67d6c4&label=release"></a>
@@ -25,6 +34,12 @@
   <a href="https://github.com/Vane1981-2011/codebuddy-plugins/issues"><strong>问题反馈</strong></a>
 </p>
 
+<p align="center">
+  <img src="docs/demo.gif" alt="终端演示：克隆仓库并跑自检，28 个插件 / 7 个领域，VALIDATION PASSED" width="820">
+</p>
+
+**不是口头承诺**：对标 7 个高星技能仓库逐项拆解，结论是"高星项目的共同点不是写得更多，而是让人 10 秒内看懂、30 秒内装上、3 分钟内判断是否适合自己"——差距清单与已补齐项见 [docs/BENCHMARK.md](docs/BENCHMARK.md)。
+
 ---
 
 ## 这是什么
@@ -37,17 +52,6 @@
 - **可检查的质量门**：目录、市场、插件清单、技能状态与文档由 CI 自动校验。
 
 面向需要把专业判断变成可复用工作流的人：财务 BP、税务与合同审查、知识管理、内容生产、软件交付与 Agent 系统建设者。
-
-## 30 秒安装
-
-```text
-/plugin marketplace add Vane1981-2011/codebuddy-plugins
-/plugin install financial-bp-command-center
-```
-
-安装后直接描述任务，或显式调用 `/financial-bp-command-center`。
-
-> 适用于支持 CodeBuddy / WorkBuddy 插件市场的宿主。技能层遵循 Agent Skills 目录约定，其他兼容宿主可按 `plugins/<name>/skills/<name>/` 手动加载。
 
 <p align="center">
   <img src="docs/assets/screenshot.png" alt="CodeBuddy Skills 在线展示站" width="100%">
